@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: azure;
+}
+
+.border{
+   /* Set your desired width */
+    padding: 10px; /* Set your desired padding */
+    border: 1px solid #d1d5db; /* Tailwind's gray-300 */
+    border-radius: 0.375rem; /* Tailwind's rounded-md */
+    
+}
