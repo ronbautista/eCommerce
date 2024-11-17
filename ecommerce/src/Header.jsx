@@ -5,8 +5,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Header() {
   return (
-    <div className="flex items-center justify-center bg-gray-100 py-4">
-      <div className="flex items-center justify-between p-4 bg-gray-200 shadow-md rounded-lg w-2/3">
+    <div className="flex items-center justify-center bg-white py-4"> {/* Changed bg-gray-100 to bg-white */}
+      <div className="flex items-center justify-between p-4 bg-white shadow-md rounded-lg w-2/3"> {/* Changed bg-gray-200 to bg-white */}
         
         {/* Picture in a Circle */}
         <div className="flex items-center">
@@ -18,13 +18,13 @@ function Header() {
         </div>
 
         {/* Search and Buttons */}
-        <div className="flex flex-row items-center space-x-2 flex-grow ml-4"> {/* Added flex-grow and margin-left */}
+        <div className="flex flex-row items-center space-x-2 flex-grow ml-4">
           <input
             type="text"
             placeholder="Search"
-            className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-full" // Use full width
+            className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
           />
-          <div className="flex space-x-2"> {/* Flex container for buttons */}
+          <div className="flex space-x-2">
             <button className="border border-blue-500 text-blue-500 px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white focus:outline-none">
               <i className="fa-solid fa-magnifying-glass"></i>
             </button>
