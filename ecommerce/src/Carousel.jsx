@@ -36,18 +36,6 @@ function Carousel() {
                     alt={`Slide ${currentIndex + 1}`}
                     className="carousel-image rounded-lg"
                 />
-                <button
-                    onClick={prevSlide}
-                    className="carousel-button carousel-button-left"
-                >
-                    &#10094;
-                </button>
-                <button
-                    onClick={nextSlide}
-                    className="carousel-button carousel-button-right"
-                >
-                    &#10095;
-                </button>
                 <div className="flex justify-center mt-2">
                     {images.map((_, index) => (
                         <div
