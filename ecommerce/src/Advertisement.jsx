@@ -36,7 +36,7 @@ function Advertisement() {
         <>
             {isModalOpen && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-                    <div className="relative bg-white rounded-lg shadow-lg max-w-lg w-auto p-2"> {/* Adjusted padding and width */}
+                    <div className="relative bg-white rounded-lg shadow-lg max-w-lg w-auto p-4"> {/* Adjusted padding and width */}
                         <button
                             onClick={closeAdvertisement}
                             className="absolute top-[-10px] right-[-10px] bg-white text-black rounded-full w-8 h-8 flex items-center justify-center shadow-lg hover:bg-gray-200"

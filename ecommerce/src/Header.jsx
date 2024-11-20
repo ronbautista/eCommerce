@@ -3,9 +3,11 @@ import './App.css';
 import './index.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Filter from './Filter'; // Import the Filter component
+import Login from './Login'; // Import the Login component
 
 function Header() {
     const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
+    const [isLoginOpen, setIsLoginOpen] = useState(false); // State to manage login visibility
 
     const handleOpenModal = () => {
         setIsModalOpen(true);
@@ -13,6 +15,10 @@ function Header() {
 
     const handleCloseModal = () => {
         setIsModalOpen(false);
+    };
+
+    const handleToggleLogin = () => {
+        setIsLoginOpen(!isLoginOpen);
     };
 
     return (
@@ -59,9 +65,9 @@ function Header() {
                         <span className="ml-1 text-gray-700">Notification</span>
                     </div>
                     <div className="flex space-x-2">
-                        <a href="/login" className="text-blue-500 hover:underline">
+                        <button onClick={handleToggleLogin} className="text-blue-500 hover:underline">
                             Login
-                        </a>
+                        </button>
                         <span>|</span>
                         <a href="/signup" className="text-blue-500 hover:underline">
                             Sign Up
@@ -72,6 +78,7 @@ function Header() {
 
             {/* Modal */}
             <Filter isOpen={isModalOpen} onClose={handleCloseModal} /> {/* Pass props to Filter */}
+            <Login isOpen={isLoginOpen} onClose={handleToggleLogin} /> {/* Pass props to Login */}
         </div>
     );
 }

@@ -23,7 +23,12 @@ const Cards = () => {
             title: "Daisy",
             description: "Adventurer."
         },
-        // Add more card data as needed
+        {
+            imageSrc: "https://static-00.iconduck.com/assets.00/netflix-icon-icon-2048x2048-yj41gpvr.png",
+            title: "Daisy",
+            description: "Adventurer."
+        },
+       
     ];
 
     return (
