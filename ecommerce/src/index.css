@@ -55,37 +55,3 @@ html, body {
 .custom-ml-4 {
     margin-left: 1rem;
 }
-
-.custom-carousel-container {
-    width: 100%; /* Full width of the parent */
-    max-width: 900px; /* Maximum width */
-    height: 300px; /* Fixed height */
-    position: relative; /* For positioning buttons */
-    overflow: hidden; /* Hide overflow */
-}
-
-.custom-carousel-image {
-    width: 100%; /* Full width of the container */
-    height: 100%; /* Full height of the container */
-    object-fit: cover; /* Maintain aspect ratio and cover the area */
-}
-
-.custom-carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.custom-carousel-button-left {
-    left: 10px; /* Position left button */
-}
-
-.custom-carousel-button-right {
-    right: 10px; /* Position right button */
-}

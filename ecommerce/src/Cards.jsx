@@ -6,21 +6,21 @@ const Cards = () => {
         // Maintenance and Repairs
         {
             imageSrc: "https://img.freepik.com/premium-photo/portrait-confident-female-engineer-standing-with-crossed-arms-factory-woman-professional-engineer-electrical-specialist-ai-generated_538213-8034.jpg",
-            title: "Ronald",
+            title: "Nicca",
             description: "Engineer."
         },
         {
-            imageSrc: "https://via.placeholder.com/150",
+            imageSrc: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Alice_Guo.png",
             title: "Alice",
             description: "Plumber."
         },
         {
-            imageSrc: "https://via.placeholder.com/150",
+            imageSrc: "https://yt3.googleusercontent.com/ZJGwKd4H-lsmPo6cZ2WJ7aaU6uRJYOAmj-MDIDy_Se0sUu3iM41hG3KXgVz690DeEPRqxaKx=s900-c-k-c0x00ffffff-no-rj",
             title: "Bob",
             description: "Electrician."
         },
         {
-            imageSrc: "https://via.placeholder.com/150",
+            imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-94a8iYRLGmupzBb35bcteQuENtqVhfV1Fg&s",
             title: "Charlie",
             description: "HVAC Specialist."
         },
@@ -74,8 +74,8 @@ const Cards = () => {
             description: "Installation Technician."
         },
         {
-            imageSrc: "https://via.placeholder.com/150",
-            title: "Hannah",
+            imageSrc: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Alice_Guo.png",
+            title: "Alice Guo",
             description: "Appliance Installer."
         },
         {
@@ -84,7 +84,7 @@ const Cards = () => {
             description: "Electrical Installer."
         },
         {
-            imageSrc: "https://via.placeholder.com/150",
+            imageSrc: "https://static.vecteezy.com/system/resources/previews/040/332/665/non_2x/ai-generated-portrait-of-a-worker-man-isolated-on-transparent-background-free-png.png",
             title: "Jack",
             description: "Plumbing Installer."
         },

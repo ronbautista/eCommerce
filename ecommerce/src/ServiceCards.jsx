@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card'; // Import the Card component
+import CardServices from './CardServices'; // Import the Card component
 import './ServiceCard.css'; // Import the specific styles for ServiceCards
 
 const ServiceCards = () => {
@@ -35,7 +35,7 @@ const ServiceCards = () => {
         <div className="service-card-container">
             <div className="flex overflow-x-auto flex-nowrap space-x-4 py-4">
                 {serviceCardData.map((data, index) => (
-                    <Card {...data} key={index} />
+                    <CardServices {...data} key={index} />
                 ))}
             </div>
         </div>

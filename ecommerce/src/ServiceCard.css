@@ -12,17 +12,25 @@
     border-radius: 0.25rem; /* Slightly smaller rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow effect */
     padding: 1rem; /* Reduced padding inside the card */
-    width: 150px; /* Decreased fixed width for each card */
+    width: 200px; /* Increased width for each card */
+    height: 250px; /* Increased height for each card */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 0.5rem; /* Reduced space between cards */
     box-sizing: border-box; /* Include padding in width calculation */
+    transition: transform 0.3s ease, height 0.3s ease; /* Smooth transition for hover effect */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+    height: 300px; /* Increase height on hover to show full text */
 }
 
 .service-card img {
-    width: 100%; /* Make the image fill the width of the card */
-    height: 120px; /* Decreased fixed height for uniformity */
+    width: 150px; /* Set the width to 150px */
+    height: 150px; /* Set the height to 150px */
     object-fit: cover; /* Maintain aspect ratio and cover the area */
     margin-bottom: 0.5rem; /* Reduced space below the image */
 }
@@ -40,4 +48,10 @@
     text-align: center; /* Center the description */
     margin-top: 0; /* Remove any top margin */
     padding: 0 0.5rem; /* Add some horizontal padding for better readability */
+    opacity: 0; /* Initially hide the description */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.service-card:hover p {
+    opacity: 1; /* Show the description on hover */
 }

@@ -7,8 +7,10 @@ function Advertisement() {
     const [isModalOpen, setIsModalOpen] = useState(true);
 
     const images = [
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTO8H6mRVR83mbxemvDIPW8rbiLZ1b8XVl6Q&s",
-        "https://miro.medium.com/v2/resize:fit:2000/1*r2gt5_YWdch-3d_NIGePfw.jpeg",
+        "https://trafft.com/wp-content/uploads/2022/11/Home-cleaning-template-2-1.png",
+        "https://media.craftyartapp.com/uploadedFiles/thumb_file/0f76efd007d0018dce24bf62fa1278036f74e5d31679311182.jpg",
+        "https://pngimg.com/d/php_PNG31.png",
+        "https://pngimg.com/d/php_PNG31.png",
         "https://pngimg.com/d/php_PNG31.png",
     ];
 
@@ -36,7 +38,7 @@ function Advertisement() {
         <>
             {isModalOpen && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-                    <div className="relative bg-white rounded-lg shadow-md max-w-3xl w-auto p-4"> {/* Changed max-w-2xl to max-w-3xl and p-6 to p-8 */}
+                    <div className="relative bg-white rounded-lg shadow-md max-w-3xl w-auto p-4">
                         <button
                             onClick={closeAdvertisement}
                             className="absolute top-[-10px] right-[-10px] bg-white text-black rounded-full w-8 h-8 flex items-center justify-center shadow-sm hover:bg-gray-200"
@@ -44,11 +46,11 @@ function Advertisement() {
                             ✖
                         </button>
                         
-                        <div className="relative flex items-center justify-center"> {/* Centering the image */}
+                        <div className="relative flex items-center justify-center">
                             <img
                                 src={images[currentImage]}
                                 alt={`Slide ${currentImage + 1}`}
-                                className="w-96 h-72 object-cover rounded-lg" // You can also adjust the image size if needed
+                                className="w-[600px] h-[424px] object-contain rounded-lg" // Use object-contain to ensure the entire image is visible
                             />
                             <button
                                 onClick={prevImage}

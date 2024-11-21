@@ -30,7 +30,7 @@ function Header() {
                     <img
                         src="https://vignette2.wikia.nocookie.net/logopedia/images/b/b2/NetflixIcon2016.jpg/revision/latest/scale-to-width-down/2000?cb=20160620223003"
                         alt="Profile"
-                        className="w-12 h-12 rounded-full border-2 border-gray-300"
+                        className="w-10 h-10 rounded-full border-2 border-gray-300"
                     />
                 </div>
 
@@ -54,8 +54,6 @@ function Header() {
                         </button>
                     </div>
                 </div>
-
-                {/* New Links Section beside Filter Button */}
                 <div className="flex items-center space-x-4 ml-4">
                     <a href="/become-skilled-worker" className="text-blue-500 hover:underline">
                         Become a skilled worker
