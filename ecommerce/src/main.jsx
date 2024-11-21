@@ -9,6 +9,9 @@ import Cards from './Cards.jsx'
 import Footer from './Footer.jsx'
 import ServiceCards from './ServiceCards.jsx'
 import Services from './Services.jsx'
+import BackgroundText from './BackgroundText.jsx'
+import AboutMe from './AboutMe.jsx'
+import BookingComponent from './BookingComponent.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <>
@@ -19,6 +22,9 @@ createRoot(document.getElementById('root')).render(
    <Cards/>
    <ServiceCards/>
 <Services/>
+<BackgroundText/>
+<AboutMe/>
+<BookingComponent/>
    <Footer/>
 
    <App/>

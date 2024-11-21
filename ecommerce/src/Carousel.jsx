@@ -44,6 +44,7 @@ function App() {
         'https://d21dfqs8hl0txa.cloudfront.net/services/main/trusted_local_gardeners_gardening_service.webp.1200x630_q85_crop-smart.jpg',
         'https://media.bunnings.com.au/api/public/content/5b862b9919334221a4e7628aa5d0b0be?v=9ec74a1f',
         'https://www.daisymaids.com/wp-content/uploads/2023/02/10-benefits-of-hiring-professional-cleaners-to-deep-clean-your-house.jpg',
+        'https://trusteyman.com/wp-content/uploads/2019/02/how-does-plumbing-work-e1548696261445.jpeg',
     ];
 
     const toolImages = [
