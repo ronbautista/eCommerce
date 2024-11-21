@@ -36,10 +36,10 @@ function Advertisement() {
         <>
             {isModalOpen && (
                 <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-                    <div className="relative bg-white rounded-lg shadow-lg max-w-lg w-auto p-4"> {/* Adjusted padding and width */}
+                    <div className="relative bg-white rounded-lg shadow-md max-w-3xl w-auto p-4"> {/* Changed max-w-2xl to max-w-3xl and p-6 to p-8 */}
                         <button
                             onClick={closeAdvertisement}
-                            className="absolute top-[-10px] right-[-10px] bg-white text-black rounded-full w-8 h-8 flex items-center justify-center shadow-lg hover:bg-gray-200"
+                            className="absolute top-[-10px] right-[-10px] bg-white text-black rounded-full w-8 h-8 flex items-center justify-center shadow-sm hover:bg-gray-200"
                         >
                             ✖
                         </button>
@@ -48,7 +48,7 @@ function Advertisement() {
                             <img
                                 src={images[currentImage]}
                                 alt={`Slide ${currentImage + 1}`}
-                                className="w-64 h-48 object-cover rounded-lg" // Set static width and height
+                                className="w-96 h-72 object-cover rounded-lg" // You can also adjust the image size if needed
                             />
                             <button
                                 onClick={prevImage}

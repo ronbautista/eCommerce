@@ -1,40 +1,41 @@
 import React from 'react';
 import Card from './Card'; // Import the Card component
+import './ServiceCard.css'; // Import the specific styles for ServiceCards
 
 const ServiceCards = () => {
     const serviceCardData = [
         {
-            imageSrc: "https://static-00.iconduck.com/assets.00/netflix-icon-icon-2048x2048-yj41gpvr.png",
-            title: "Plumbing Services",
+            imageSrc: "https://www.fracttal.com/hubfs/_c7242d8e-7aa8-4617-944e-29a06efcd8c2%20%28convert.io%29.webp",
+            title: "Maintenance & Repairs",
             description: "Expert plumbing services for all your needs."
         },
         {
-            imageSrc: "https://static-00.iconduck.com/assets.00/netflix-icon-icon-2048x2048-yj41gpvr.png",
-            title: "Electrical Services",
-            description: "Professional electrical repairs and installations."
+            imageSrc: "https://www.popcornfurniture.com/wp-content/uploads/2020/08/sanitizing.jpg",
+            title: "Cleaning & Sanitation",
+            description: "Professional cleaning services for homes and offices."
         },
         {
-            imageSrc: "https://static-00.iconduck.com/assets.00/netflix-icon-icon-2048x2048-yj41gpvr.png",
-            title: "HVAC Services",
+            imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbzq7y1VoSUyd1mSe-Gg1R6RxVSwjaq9e4XA&s",
+            title: "Installation Services",
             description: "Heating, ventilation, and air conditioning solutions."
         },
         {
-            imageSrc: "https://static-00.iconduck.com/assets.00/netflix-icon-icon-2048x2048-yj41gpvr.png",
-            title: "Roofing Services",
-            description: "Roof repairs and replacements to keep you safe."
+            imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s",
+            title: "Landscaping & Outdoor Care",
+            description: "Expert landscaping and outdoor maintenance services."
         },
         {
-            imageSrc: "https://static-00.iconduck.com/assets.00/netflix-icon-icon-2048x2048-yj41gpvr.png",
-            title: "Appliance Repairs",
-            description: "Get your appliances up and running again."
+            imageSrc: "https://media.istockphoto.com/id/157398786/photo/african-american-man-renovating-home-interior.jpg?s=612x612&w=0&k=20&c=C_Yb1vd1VXHxY3UZNWQyZSsPuH43a6UNtxEoNq3RUHM=",
+            title: "Renovation and Improvement",
+            description: "Home renovation services to enhance your living space."
         },
     ];
 
     return (
-        <div className="flex flex-col items-center justify-center w-11/12 md:w-2/3 mx-auto mt-8">
-            <div className="flex overflow-x-auto flex-nowrap space-x-4 py-4"> {/* Add padding to ensure cards are not cut off */}
+        <div className="service-card-container">
+            <div className="flex overflow-x-auto flex-nowrap space-x-4 py-4">
                 {serviceCardData.map((data, index) => (
-                    <Card key={index} {...data} />
+                    <Card {...data} key={index} />
                 ))}
             </div>
         </div>

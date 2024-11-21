@@ -7,7 +7,7 @@ import Header from './Header.jsx'
 import Carousel from './Carousel.jsx'
 import Cards from './Cards.jsx'
 import Footer from './Footer.jsx'
-import ServiceCards from './Servicecards.jsx'
+import ServiceCards from './ServiceCards.jsx'
 import Services from './Services.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>

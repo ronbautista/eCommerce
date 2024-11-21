@@ -1,0 +1,43 @@
+/* ServiceCard.css */
+.service-card-container {
+    display: flex;
+    justify-content: center; /* Center the container */
+    padding: 3rem; /* Increased padding around the container for more space */
+    max-width: 1200px; /* Increased maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.service-card {
+    background-color: white; /* Card background */
+    border-radius: 0.25rem; /* Slightly smaller rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow effect */
+    padding: 1rem; /* Reduced padding inside the card */
+    width: 150px; /* Decreased fixed width for each card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.5rem; /* Reduced space between cards */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.service-card img {
+    width: 100%; /* Make the image fill the width of the card */
+    height: 120px; /* Decreased fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    margin-bottom: 0.5rem; /* Reduced space below the image */
+}
+
+.service-card h3 {
+    font-size: 1rem; /* Decreased title font size */
+    font-weight: 600; /* Title font weight */
+    margin-bottom: 0.5rem; /* Reduced space below the title */
+    text-align: center; /* Center the title */
+}
+
+.service-card p {
+    color: #4A5568; /* Text color */
+    font-size: 0.75rem; /* Decreased description font size */
+    text-align: center; /* Center the description */
+    margin-top: 0; /* Remove any top margin */
+    padding: 0 0.5rem; /* Add some horizontal padding for better readability */
+}
