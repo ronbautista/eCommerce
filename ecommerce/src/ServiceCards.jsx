@@ -34,7 +34,6 @@ const ServiceCards = () => {
     return (
         <div className="service-card-container">
             <div className="flex flex-col space-y-4 py-4">
-                {/* Category text for Maintenance & Repairs */}
                 <h2 style={{ fontWeight: 'bold', fontSize: '24px' }}>Services</h2>
                 <div className="flex overflow-x-auto flex-nowrap space-x-4">
                     {serviceCardData.map((data, index) => (
