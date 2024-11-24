@@ -5,6 +5,8 @@ const Services1 = () => {
     "Painting / Wall Repair",
     "Remodelling",
     "Door & Window Replacement",
+    "Renovation", // New category added
+    "Improvement", // New category added
   ];
 
   const servicesData = {
@@ -23,12 +25,29 @@ const Services1 = () => {
       { name: "Door Installation", rating: 5, reviews: 6 },
       { name: "Custom Windows", rating: 4, reviews: 4 },
     ],
+    "Renovation": [ // Services for the new category
+      { name: "Home Renovation", rating: 5, reviews: 10 },
+      { name: "Office Renovation", rating: 4, reviews: 8 },
+      { name: "Bathroom Renovation", rating: 5, reviews: 12 },
+    ],
+    "Improvement": [ // Services for the new category
+      { name: "Landscape Improvement", rating: 5, reviews: 10 },
+      { name: "Energy Efficiency Upgrade", rating: 4, reviews: 8 },
+      { name: "Accessibility Improvement", rating: 5, reviews: 12 },
+    ],
   };
 
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 
   return (
     <div className="bg-green-100 p-6">
+      {/* Header Text with White Background */}
+      <div className="flex justify-center mb-6">
+        <h1 className="text-4xl font-bold bg-white p-4 rounded-lg shadow-md inline-block">
+          Renovation and Improvement Services
+        </h1>
+      </div>
+
       {/* Top Buttons */}
       <div className="flex justify-center gap-4 mb-6">
         {categories.map((category, index) => (

@@ -7,34 +7,39 @@ const Services2 = () => {
     "HVAC",
     "Roofing",
     "Appliance Repairs",
-    // New category added
+    "Maintenance and Repair", // New category added
   ];
 
   const servicesData = {
     "Plumbing": [
-      { name: "Interior Painting", rating: 4, reviews: 10 },
-      { name: "Exterior Painting", rating: 5, reviews: 15 },
-      { name: "Wall Repair", rating: 4, reviews: 8 },
+      { name: "Leak Repair", rating: 4, reviews: 10 },
+      { name: "Pipe Installation", rating: 5, reviews: 15 },
+      { name: "Drain Cleaning", rating: 4, reviews: 8 },
     ],
     "Electrical": [
-      { name: "Kitchen Remodelling", rating: 5, reviews: 20 },
-      { name: "Bathroom Remodelling", rating: 4, reviews: 12 },
-      { name: "Basement Remodelling", rating: 4, reviews: 5 },
+      { name: "Wiring Installation", rating: 5, reviews: 20 },
+      { name: "Circuit Breaker Replacement", rating: 4, reviews: 12 },
+      { name: "Lighting Installation", rating: 4, reviews: 5 },
     ],
     "HVAC": [
-      { name: "Window Installation", rating: 4, reviews: 9 },
-      { name: "Door Installation", rating: 5, reviews: 6 },
-      { name: "Custom Windows", rating: 4, reviews: 4 },
+      { name: "AC Repair", rating: 4, reviews: 9 },
+      { name: "Furnace Installation", rating: 5, reviews: 6 },
+      { name: "Vent Cleaning", rating: 4, reviews: 4 },
     ],
-    "Roofing": [ // Services for the new category
-      { name: "Hardwood Flooring", rating: 5, reviews: 10 },
-      { name: "Laminate Flooring", rating: 4, reviews: 8 },
-      { name: "Tile Flooring", rating: 5, reviews: 12 },
+    "Roofing": [
+      { name: "Roof Inspection", rating: 5, reviews: 10 },
+      { name: "Shingle Replacement", rating: 4, reviews: 8 },
+      { name: "Gutter Installation", rating: 5, reviews: 12 },
     ],
-    "Appliance Repairs": [ // Services for the new category
-      { name: "Hardwood Flooring", rating: 5, reviews: 10 },
-      { name: "Laminate Flooring", rating: 4, reviews: 8 },
-      { name: "Tile Flooring", rating: 5, reviews: 12 },
+    "Appliance Repairs": [
+      { name: "Washing Machine Repair", rating: 5, reviews: 10 },
+      { name: "Refrigerator Repair", rating: 4, reviews: 8 },
+      { name: "Oven Repair", rating: 5, reviews: 12 },
+    ],
+    "Maintenance and Repair": [ // Services for the new category
+      { name: "General Maintenance", rating: 5, reviews: 10 },
+      { name: "Furniture Assembly", rating: 4, reviews: 8 },
+      { name: "Home Repair Services", rating: 5, reviews: 12 },
     ],
   };
 
@@ -42,6 +47,13 @@ const Services2 = () => {
 
   return (
     <div className="bg-green-100 p-6">
+      {/* Header Text with White Background */}
+      <div className="flex justify-center mb-6">
+        <h1 className="text-4xl font-bold bg-white p-4 rounded-lg shadow-md inline-block">
+          Maintenance and Repair Services
+        </h1>
+      </div>
+
       {/* Top Buttons */}
       <div className="flex justify-center gap-4 mb-6">
         {categories.map((category, index) => (

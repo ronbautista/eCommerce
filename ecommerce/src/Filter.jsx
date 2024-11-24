@@ -29,7 +29,7 @@ function Filter({ isOpen, onClose, onSelectFilter }) {
 
                 {/* Service Buttons */}
                 <div className="mb-4 grid grid-cols-2 gap-2">
-                    {['Service1', 'Service2', 'Service3', 'Service4'].map((service) => (
+                    {['Renovation and Improvement Service', 'Maintenance and Repair Service', 'Cleaning and Sanitazion', 'Installation Service', 'Landscaping and Outdoor Care'].map((service) => (
                         <button
                             key={service}
                             className={`border rounded-lg px-4 py-2 ${selectedFilters.includes(service) ? 'bg-blue-500 text-white' : ''}`}

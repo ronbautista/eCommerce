@@ -15,16 +15,17 @@ import Services1 from './Services1.jsx';
 import Services2 from './Services2.jsx';
 import Services3 from './Services3.jsx';
 import Service4 from './Service4.jsx';
+import Services5 from './Services5.jsx';
 import Newpage from './Newpage.jsx';
 
-// Create a root element
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 function Main() {
-    const [selectedServices, setSelectedServices] = useState([]); // State for selected services
+    const [selectedServices, setSelectedServices] = useState([]);
 
     const handleSelectService = (services) => {
-        setSelectedServices(services); // Update selected services
+        setSelectedServices(services); 
     };
 
     return (
@@ -41,10 +42,11 @@ function Main() {
                         <BackgroundText />
                         <AboutMe />
                         {/* Render Services below AboutMe */}
-                        {selectedServices.includes('Service1') && <Services1 />}
-                        {selectedServices.includes('Service2') && <Services2 />}
-                        {selectedServices.includes('Service3') && <Services3 />}
-                        {selectedServices.includes('Service4') && <Service4 />}
+                        {selectedServices.includes('Renovation and Improvement Service') && <Services1 />}
+                        {selectedServices.includes('Maintenance and Repair Service') && <Services2 />}
+                        {selectedServices.includes('Cleaning and Sanitazion') && <Services3 />}
+                        {selectedServices.includes('Installation Service') && <Service4 />}
+                        {selectedServices.includes('Landscaping and Outdoor Care') && <Services5 />}
                     </>
                 } />
                 <Route path="/new" element={<Newpage />} />

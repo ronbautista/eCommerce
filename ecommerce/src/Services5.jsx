@@ -1,33 +1,33 @@
 import React, { useState } from "react";
 
-const Services3 = () => {
+const Service5 = () => {
   const categories = [
-    "GENERAL HOUSE CLEANING",
-    "WINDOW CLEANING",
-    "CARPET / UPHOLSTERY CLEANING",
-    "PEST CONTROL", // New category added
+    "LAWN CARE",
+    "PLANTING & GARDENING",
+    "HARDSCAPING",
+    "WATER FEATURES", // New category added
   ];
 
   const servicesData = {
-    "GENERAL HOUSE CLEANING": [
-      { name: "Interior Cleaning", rating: 4, reviews: 10 },
-      { name: "Deep Cleaning", rating: 5, reviews: 15 },
-      { name: "Move In/Out Cleaning", rating: 4, reviews: 8 },
+    "LAWN CARE": [
+      { name: "Mowing and Trimming", rating: 5, reviews: 20 },
+      { name: "Fertilizing", rating: 4, reviews: 12 },
+      { name: "Aeration", rating: 4, reviews: 8 },
     ],
-    "WINDOW CLEANING": [
-      { name: "Residential Window Cleaning", rating: 5, reviews: 20 },
-      { name: "Commercial Window Cleaning", rating: 4, reviews: 12 },
-      { name: "Screen Cleaning", rating: 4, reviews: 5 },
+    "PLANTING & GARDENING": [
+      { name: "Shrub Planting", rating: 4, reviews: 10 },
+      { name: "Garden Design", rating: 5, reviews: 15 },
+      { name: "Weeding", rating: 3, reviews: 6 },
     ],
-    "CARPET / UPHOLSTERY CLEANING": [
-      { name: "Carpet Cleaning", rating: 4, reviews: 9 },
-      { name: "Upholstery Cleaning", rating: 5, reviews: 6 },
-      { name: "Stain Removal", rating: 4, reviews: 4 },
+    "HARDSCAPING": [
+      { name: "Patio Construction", rating: 5, reviews: 18 },
+      { name: "Walkways Installation", rating: 4, reviews: 14 },
+      { name: "Retaining Walls", rating: 5, reviews: 11 },
     ],
-    "PEST CONTROL": [ // Services for the new category
-      { name: "Pest Inspection", rating: 5, reviews: 10 },
-      { name: "Pest Extermination", rating: 4, reviews: 8 },
-      { name: "Preventive Treatments", rating: 5, reviews: 12 },
+    "WATER FEATURES": [ // Services for the new category
+      { name: "Fountain Installation", rating: 5, reviews: 8 },
+      { name: "Pond Design", rating: 4, reviews: 10 },
+      { name: "Waterfall Features", rating: 5, reviews: 7 },
     ],
   };
 
@@ -35,10 +35,10 @@ const Services3 = () => {
 
   return (
     <div className="bg-green-100 p-6">
-      {/* Header Text with White Background */}
+      {/* Centered H1 Title with White Background */}
       <div className="flex justify-center mb-6">
-        <h1 className="text-4xl font-bold bg-white p-4 rounded-lg shadow-md inline-block">
-          Cleaning and Sanitation
+        <h1 className="bg-white inline-block p-2 rounded-lg shadow-md text-center text-3xl font-bold">
+          Landscaping and Outdoor Care
         </h1>
       </div>
 
@@ -60,7 +60,7 @@ const Services3 = () => {
       </div>
 
       {/* Service Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {servicesData[selectedCategory].map((service, index) => (
           <div
             key={index}
@@ -84,4 +84,4 @@ const Services3 = () => {
 };
 
 // Export the correct component
-export default Services3;
+export default Service5;

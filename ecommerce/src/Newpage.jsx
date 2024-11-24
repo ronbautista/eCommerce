@@ -10,10 +10,7 @@ const NewPage = () => {
     return (
         <div>
             <BookingComponent/>
-            <Services2/>
-           <Services1/>
-            <Services3/>
-            <Service4/>
+
             
         </div>
     );

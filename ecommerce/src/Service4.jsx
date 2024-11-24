@@ -35,6 +35,13 @@ const Service4 = () => {
 
   return (
     <div className="bg-green-100 p-6">
+      {/* Centered H1 Title with White Background */}
+      <div className="flex justify-center mb-6">
+        <h1 className="bg-white inline-block p-2 rounded-lg shadow-md text-center text-3xl font-bold">
+          Installation Services
+        </h1>
+      </div>
+
       {/* Top Buttons */}
       <div className="flex justify-center gap-4 mb-6">
         {categories.map((category, index) => (
@@ -53,7 +60,7 @@ const Service4 = () => {
       </div>
 
       {/* Service Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {servicesData[selectedCategory].map((service, index) => (
           <div
             key={index}
