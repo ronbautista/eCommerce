@@ -10,24 +10,24 @@ const Services3 = () => {
 
   const servicesData = {
     "GENERAL HOUSE CLEANING": [
-      { name: "Interior Painting", rating: 4, reviews: 10 },
-      { name: "Exterior Painting", rating: 5, reviews: 15 },
-      { name: "Wall Repair", rating: 4, reviews: 8 },
+      { name: "Interior Cleaning", rating: 4, reviews: 10 },
+      { name: "Deep Cleaning", rating: 5, reviews: 15 },
+      { name: "Move In/Out Cleaning", rating: 4, reviews: 8 },
     ],
     "WINDOW CLEANING": [
-      { name: "Kitchen Remodelling", rating: 5, reviews: 20 },
-      { name: "Bathroom Remodelling", rating: 4, reviews: 12 },
-      { name: "Basement Remodelling", rating: 4, reviews: 5 },
+      { name: "Residential Window Cleaning", rating: 5, reviews: 20 },
+      { name: "Commercial Window Cleaning", rating: 4, reviews: 12 },
+      { name: "Screen Cleaning", rating: 4, reviews: 5 },
     ],
     "CARPET / UPHOLSTERY CLEANING": [
-      { name: "Window Installation", rating: 4, reviews: 9 },
-      { name: "Door Installation", rating: 5, reviews: 6 },
-      { name: "Custom Windows", rating: 4, reviews: 4 },
+      { name: "Carpet Cleaning", rating: 4, reviews: 9 },
+      { name: "Upholstery Cleaning", rating: 5, reviews: 6 },
+      { name: "Stain Removal", rating: 4, reviews: 4 },
     ],
     "PEST CONTROL": [ // Services for the new category
-      { name: "Hardwood Flooring", rating: 5, reviews: 10 },
-      { name: "Laminate Flooring", rating: 4, reviews: 8 },
-      { name: "Tile Flooring", rating: 5, reviews: 12 },
+      { name: "Pest Inspection", rating: 5, reviews: 10 },
+      { name: "Pest Extermination", rating: 4, reviews: 8 },
+      { name: "Preventive Treatments", rating: 5, reviews: 12 },
     ],
   };
 
@@ -35,6 +35,13 @@ const Services3 = () => {
 
   return (
     <div className="bg-green-100 p-6">
+      {/* Header Text with White Background */}
+      <div className="bg-white p-4 rounded-lg shadow-md mb-6">
+        <h1 className="text-4xl font-bold text-center">
+          Cleaning and Sanitation
+        </h1>
+      </div>
+
       {/* Top Buttons */}
       <div className="flex justify-center gap-4 mb-6">
         {categories.map((category, index) => (
@@ -43,7 +50,7 @@ const Services3 = () => {
             onClick={() => setSelectedCategory(category)}
             className={`px-4 py-2 text-black font-semibold rounded-lg shadow-md ${
               selectedCategory === category
-                ? "bg-green-500"
+                ? "bg-white" // Change to white when selected
                 : "bg-transparent hover:bg-gray-200"
             }`}
           >

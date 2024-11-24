@@ -7,7 +7,7 @@ const Services2 = () => {
     "HVAC",
     "Roofing",
     "Appliance Repairs",
-     // New category added
+    // New category added
   ];
 
   const servicesData = {
@@ -32,10 +32,10 @@ const Services2 = () => {
       { name: "Tile Flooring", rating: 5, reviews: 12 },
     ],
     "Appliance Repairs": [ // Services for the new category
-        { name: "Hardwood Flooring", rating: 5, reviews: 10 },
-        { name: "Laminate Flooring", rating: 4, reviews: 8 },
-        { name: "Tile Flooring", rating: 5, reviews: 12 },
-      ],
+      { name: "Hardwood Flooring", rating: 5, reviews: 10 },
+      { name: "Laminate Flooring", rating: 4, reviews: 8 },
+      { name: "Tile Flooring", rating: 5, reviews: 12 },
+    ],
   };
 
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
@@ -50,7 +50,7 @@ const Services2 = () => {
             onClick={() => setSelectedCategory(category)}
             className={`px-4 py-2 text-black font-semibold rounded-lg shadow-md ${
               selectedCategory === category
-                ? "bg-green-500"
+                ? "bg-white" // Change to white when selected
                 : "bg-transparent hover:bg-gray-200"
             }`}
           >

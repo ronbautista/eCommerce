@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Filter from './Filter'; // Import the Filter component
 import Login from './Login'; // Import the Login component
 
-function Header() {
+function Header({ onSelectService }) { // Accept onSelectService as a prop
     const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
     const [isLoginOpen, setIsLoginOpen] = useState(false); // State to manage login visibility
 
@@ -21,10 +21,15 @@ function Header() {
         setIsLoginOpen(!isLoginOpen);
     };
 
+    const handleSelectService = (services) => {
+        onSelectService(services); // Pass the selected services back to the main component
+        setIsModalOpen(false); // Close the modal after selection
+    };
+
     return (
-        <div className="flex items-center justify-center bg-white py-4">
+        <div className="flex flex-col items-center bg-white py-4">
+            {/* Header Content */}
             <div className="flex items-center justify-between p-4 bg-white shadow-md rounded-lg w-2/3">
-                
                 {/* Profile Image */}
                 <div className="flex items-center">
                     <img
@@ -42,20 +47,22 @@ function Header() {
                         className="border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 w-full"
                     />
                     <div className="flex space-x-2">
-                        <button className="border border-blue-500 text-blue-500 px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white focus:outline-none">
+                        <button className="border border-black text-black px-4 py-2 rounded-md hover:bg-black hover:text-white focus:outline-none">
                             <i className="fa-solid fa-magnifying-glass"></i>
                         </button>
                         <button 
                             onClick={handleOpenModal} // Open modal on click
-                            className="flex items-center border border-blue-500 text-blue-500 px-6 py-3 rounded-md hover:bg-blue-500 hover:text-white focus:outline-none"
+                            className="flex items-center border border-black text-black px-6 py-3 rounded-md hover:bg-black hover:text-white focus:outline-none"
                         >
                             <i className="fas fa-filter mr-2"></i>
                             Filter
                         </button>
                     </div>
                 </div>
+
+                {/* Additional Links and Actions */}
                 <div className="flex items-center space-x-4 ml-4">
-                    <a href="/become-skilled-worker" className="text-blue-500 hover:underline">
+                    <a href="/become-skilled-worker" className="text-black hover:underline">
                         Become a skilled worker
                     </a>
                     <div className="flex items-center">
@@ -63,20 +70,20 @@ function Header() {
                         <span className="ml-1 text-gray-700">Notification</span>
                     </div>
                     <div className="flex space-x-2">
-                        <button onClick={handleToggleLogin} className="text-blue-500 hover:underline">
+                        <button onClick={handleToggleLogin} className="text-black hover:underline ">
                             Login
                         </button>
                         <span>|</span>
-                        <a href="/signup" className="text-blue-500 hover:underline">
+                        <a href="/signup" className="text-black hover:underline">
                             Sign Up
                         </a>
                     </div>
                 </div>
             </div>
 
-            {/* Modal */}
-            <Filter isOpen={isModalOpen} onClose={handleCloseModal} /> {/* Pass props to Filter */}
-            <Login isOpen={isLoginOpen} onClose={handleToggleLogin} /> {/* Pass props to Login */}
+            {/* Modal Components */}
+            <Filter isOpen={isModalOpen} onClose={handleCloseModal} onSelectFilter={handleSelectService} />
+            <Login isOpen={isLoginOpen} onClose={handleToggleLogin} />
         </div>
     );
 }

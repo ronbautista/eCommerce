@@ -4,7 +4,7 @@ const Service4 = () => {
   const categories = [
     "APPLIANCE INSTALLATION",
     "SMART HOME DEVICES INSTALLATION",
-    "CFURNITURE ASSEMBLY",
+    "FURNITURE ASSEMBLY",
     "LIGHTING INSTALLATION", // New category added
   ];
 
@@ -43,7 +43,7 @@ const Service4 = () => {
             onClick={() => setSelectedCategory(category)}
             className={`px-4 py-2 text-black font-semibold rounded-lg shadow-md ${
               selectedCategory === category
-                ? "bg-green-500"
+                ? "bg-white" // Change to white when selected
                 : "bg-transparent hover:bg-gray-200"
             }`}
           >
