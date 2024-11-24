@@ -44,7 +44,7 @@ function Main() {
                         {/* Render Services below AboutMe */}
                         {selectedServices.includes('Renovation and Improvement Service') && <Services1 />}
                         {selectedServices.includes('Maintenance and Repair Service') && <Services2 />}
-                        {selectedServices.includes('Cleaning and Sanitazion') && <Services3 />}
+                        {selectedServices.includes('Cleaning and Sanitization') && <Services3 />}
                         {selectedServices.includes('Installation Service') && <Service4 />}
                         {selectedServices.includes('Landscaping and Outdoor Care') && <Services5 />}
                     </>

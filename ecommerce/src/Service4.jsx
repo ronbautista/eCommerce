@@ -5,30 +5,25 @@ const Service4 = () => {
     "APPLIANCE INSTALLATION",
     "SMART HOME DEVICES INSTALLATION",
     "FURNITURE ASSEMBLY",
-    "LIGHTING INSTALLATION", // New category added
   ];
 
   const servicesData = {
     "APPLIANCE INSTALLATION": [
-      { name: "Interior Painting", rating: 4, reviews: 10 },
-      { name: "Exterior Painting", rating: 5, reviews: 15 },
-      { name: "Wall Repair", rating: 4, reviews: 8 },
+      { name: "Refrigerator Installation", rating: 4, reviews: 10, image: "https://media.istockphoto.com/id/1180607321/photo/two-young-male-movers-placing-steel-refrigerator-in-kitchen.jpg?s=612x612&w=0&k=20&c=PW4dVclZ9wCgc-qq6BLHuMKzzStEW2N4-DxmlUk0K54=" },
+      { name: "Washing Machine Installation", rating: 5, reviews: 15, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7bbcsNZjyrGeCI9RMHbQ3FqfjMQ9ZBDoMuA&s" },
+      { name: "Dishwasher Installation", rating: 4, reviews: 8, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwpwaV59nA5DDoQu1ddfwQUDLZso8qP8kqlA&s" },
     ],
     "SMART HOME DEVICES INSTALLATION": [
-      { name: "Kitchen Remodelling", rating: 5, reviews: 20 },
-      { name: "Bathroom Remodelling", rating: 4, reviews: 12 },
-      { name: "Basement Remodelling", rating: 4, reviews: 5 },
+      { name: "Smart Thermostat Installation", rating: 5, reviews: 20, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBLBK5a93CkEyfkKW0I6DaiV0rz0ql_qyjFQ&s" },
+      { name: "Smart Security Camera Installation", rating: 4, reviews: 12, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuxhntaJyFiRe0IZrz_49hCOv79yV8Vs0PLQ&s" },
+      { name: "Smart Lighting Installation", rating: 4, reviews: 5, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlhx4YDsKbI8iKfIPJfFP1MQY5AXvSh7WfiA&s" },
     ],
     "FURNITURE ASSEMBLY": [
-      { name: "Window Installation", rating: 4, reviews: 9 },
-      { name: "Door Installation", rating: 5, reviews: 6 },
-      { name: "Custom Windows", rating: 4, reviews: 4 },
+      { name: "IKEA Furniture Assembly", rating: 4, reviews: 9, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEAnSmD920fHFR37z6vQtPRKirO4JQfqJxgA&s" },
+      { name: "Office Furniture Assembly", rating: 5, reviews: 6, image: "https://i.ytimg.com/vi/UrZL-c9UgP4/maxresdefault.jpg" },
+      { name: "Outdoor Furniture Assembly", rating: 4, reviews: 4, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsWbMX5IWjU1ztFZny7ClwSSI3VNSfi9xicA&s" },
     ],
-    "LIGHTING INSTALLATION": [ // Services for the new category
-      { name: "Hardwood Flooring", rating: 5, reviews: 10 },
-      { name: "Laminate Flooring", rating: 4, reviews: 8 },
-      { name: "Tile Flooring", rating: 5, reviews: 12 },
-    ],
+
   };
 
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
@@ -64,10 +59,10 @@ const Service4 = () => {
         {servicesData[selectedCategory].map((service, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-md p-4 text-center"
+            className="bg-white rounded-lg shadow-md p-4 text-center transition-transform transform hover:scale-105"
           >
-            {/* Placeholder for image */}
-            <div className="w-full h-32 bg-gray-200 rounded mb-4"></div>
+            {/* Render the image */}
+            <img src={service.image} alt={service.name} className="w-full h-32 object-cover rounded mb-4" />
             {/* Name */}
             <p className="text-lg font-semibold">{service.name}</p>
             {/* Rating */}

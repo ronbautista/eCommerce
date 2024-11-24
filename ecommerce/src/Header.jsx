@@ -33,7 +33,7 @@ function Header({ onSelectService }) { // Accept onSelectService as a prop
                 {/* Profile Image */}
                 <div className="flex items-center">
                     <img
-                        src="https://vignette2.wikia.nocookie.net/logopedia/images/b/b2/NetflixIcon2016.jpg/revision/latest/scale-to-width-down/2000?cb=20160620223003"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFb86FPFx9MoUCPxs_CjN0HAAvjZJG8d22OQ&s"
                         alt="Profile"
                         className="w-10 h-10 rounded-full border-2 border-gray-300"
                     />

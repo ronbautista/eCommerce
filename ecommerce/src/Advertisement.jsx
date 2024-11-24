@@ -9,9 +9,12 @@ function Advertisement() {
     const images = [
         "https://trafft.com/wp-content/uploads/2022/11/Home-cleaning-template-2-1.png",
         "https://media.craftyartapp.com/uploadedFiles/thumb_file/0f76efd007d0018dce24bf62fa1278036f74e5d31679311182.jpg",
-        "https://pngimg.com/d/php_PNG31.png",
-        "https://pngimg.com/d/php_PNG31.png",
-        "https://pngimg.com/d/php_PNG31.png",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8GzFbaOpRAaFKIVx6FhgnUAz5H_HQxpBrkg&s",
+        "https://img.pikbest.com/origin/06/00/10/66kpIkbEsTSEx.jpg!f305cw",
+        "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/appliance-repair-services-design-template-fb8569e38a5e8ea90d32c2d85d613c5e_screen.jpg?ts=1658672126",
+        "https://i.pinimg.com/736x/4b/17/1a/4b171a5c5766733605d2ea4e7c4bea80.jpg",
+        "https://getjobber.com/wp-content/uploads/2022/08/A8FE545B-AAFD-42E6-8D1A-56187C5BD652-768x742-1.jpg",
+        
     ];
 
     const nextImage = () => {
