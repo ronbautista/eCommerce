@@ -3,7 +3,8 @@ import './App.css';
 import './index.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Filter from './Filter'; // Import the Filter component
-import Login from './Login'; // Import the Login component
+import Login from './Login';
+import Nestfix from '../src/assets/Nestfix.png' // Import the Login component
 
 function Header({ onSelectService }) { // Accept onSelectService as a prop
     const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
@@ -33,7 +34,7 @@ function Header({ onSelectService }) { // Accept onSelectService as a prop
                 {/* Profile Image */}
                 <div className="flex items-center">
                     <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFb86FPFx9MoUCPxs_CjN0HAAvjZJG8d22OQ&s"
+                        src={Nestfix}
                         alt="Profile"
                         className="w-10 h-10 rounded-full border-2 border-gray-300"
                     />

@@ -2,7 +2,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate hook
 
-const AboutMe = ({ person }) => {
+const AboutMe2 = ({ person }) => {
   const navigate = useNavigate(); // Initialize the navigate hook
 
   if (!person) {
@@ -117,4 +117,4 @@ const AboutMe = ({ person }) => {
   );
 };
 
-export default AboutMe;
+export default AboutMe2;
