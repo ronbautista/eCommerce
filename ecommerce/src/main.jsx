@@ -1,4 +1,3 @@
-// Main.jsx
 import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -15,6 +14,7 @@ import Services2 from './Services2';
 import Services3 from './Services3';
 import Service4 from './Service4';
 import Services5 from './Services5';
+import Aliceguo from './Aliceguo'; // Import the Aliceguo component
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -49,6 +49,7 @@ function Main() {
         {/* Route to Servicesmain and pass selected service name */}
         <Route path="/services/:serviceName" element={<Servicesmain />} />
         <Route path="/new" element={<NewPage />} /> {/* Define the new route */}
+        <Route path="/Aliceguo" element={<Aliceguo />} /> {/* Add the route for Aliceguo */}
       </Routes>
       <Footer />
     </>

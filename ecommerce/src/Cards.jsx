@@ -1,7 +1,10 @@
 import React from 'react';
 import Card from './Card'; // Import the Card component
+import Aliceguo from './Aliceguo';
+import { useNavigate } from 'react-router-dom';
 
 const Cards = () => {
+    const navigate = useNavigate(); 
     const cardData = [
         // Maintenance and Repairs
         {
@@ -206,19 +209,32 @@ const Cards = () => {
         },
     ];
 
+    const handleCardClick = (data) => {
+        navigate('/Aliceguo', {
+            state: { 
+                imageSrc: data.imageSrc,
+                title: data.title,
+                description: data.description,
+                rating: data.rating
+            }
+        });
+    };
+
     return (
         <div className="flex flex-col items-center justify-center w-full md:w-2/3 mx-auto overflow-x-auto whitespace-nowrap mt-8">
             <div className="flex overflow-x-auto flex-nowrap space-x-4">
                 {cardData.map((data, index) => (
-                    <div key={index} className="flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow-md w-64">
+                    <div 
+                        key={index} 
+                        className="flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow-md w-64 cursor-pointer" 
+                        onClick={() => handleCardClick(data)} 
+                    >
                         <img src={data.imageSrc} alt={data.title} className="w-32 h-32 object-cover rounded-full mb-4" />
                         <h2 className="text-xl font-semibold">{data.title}</h2>
                         <p className="text-sm text-gray-500">{data.description}</p>
                         <div className="flex items-center mt-2">
-                            {/* Gold Star with Rating */}
-                            <span className="text-yellow-500">★</span> {/* Gold star */}
-                            <span className="ml-1"></span> {/* Text "5 stars" */}
-                            <span className="ml-1">({data.rating})</span> {/* Rating count */}
+                            <span className="text-yellow-500">★</span>
+                            <span className="ml-1">({data.rating})</span>
                         </div>
                     </div>
                 ))}
@@ -226,6 +242,5 @@ const Cards = () => {
         </div>
     );
 };
-
 
 export default Cards;

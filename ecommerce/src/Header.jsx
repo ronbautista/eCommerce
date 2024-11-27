@@ -4,7 +4,7 @@ import './index.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Filter from './Filter'; // Import the Filter component
 import Login from './Login';
-import Nestfix from '../src/assets/Nestfix.png' // Import the Login component
+import Nestfix from '../src/assets/Nestfix.png'; // Import the Login component
 
 function Header({ onSelectService }) { // Accept onSelectService as a prop
     const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
@@ -30,7 +30,7 @@ function Header({ onSelectService }) { // Accept onSelectService as a prop
     return (
         <div className="flex flex-col items-center bg-white py-4">
             {/* Header Content */}
-            <div className="flex items-center justify-between p-4 bg-white shadow-md rounded-lg w-2/3">
+            <div className="flex items-center justify-between p-4 bg-white shadow-md rounded-lg w-11/12 md:w-2/3">
                 {/* Profile Image */}
                 <div className="flex items-center">
                     <img
@@ -70,11 +70,11 @@ function Header({ onSelectService }) { // Accept onSelectService as a prop
                         <i className="fas fa-bell text-gray-600"></i>
                         <span className="ml-1 text-gray-700">Notification</span>
                     </div>
-                    <div className="flex space-x-2">
-                        <button onClick={handleToggleLogin} className="text-black hover:underline ">
+                    <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-2 space-y-2 md:space-y-0"> {/* Stack on small screens */}
+                        <button onClick={handleToggleLogin} className="text-black hover:underline">
                             Login
                         </button>
-                        <span>|</span>
+                        <span className="hidden md:inline">|</span> {/* Hide the separator on small screens */}
                         <a href="/signup" className="text-black hover:underline">
                             Sign Up
                         </a>
@@ -89,4 +89,4 @@ function Header({ onSelectService }) { // Accept onSelectService as a prop
     );
 }
 
-export default Header;
+export default Header; 
