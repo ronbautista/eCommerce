@@ -46,6 +46,7 @@ const AboutMe2 = ({ person }) => {
           <h3 className="text-xl font-bold">{name}</h3>
           <p className="text-gray-600 mb-4">123 Mango Avenue, Brgy. Kamputhaw, Cebu City</p>
           <p className="text-gray-700">{description || "No description available."}</p>
+          <p className="text-gray-700">{description || "No description available."}</p>
           <p className="mt-4 text-gray-700 font-medium">Looking forward to working with you!</p>
         </div>
 

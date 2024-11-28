@@ -34,7 +34,7 @@ const Services2 = () => {
     "Appliance Repairs": [
       { name: "Washing Machine Repair", rating: 5, reviews: 10, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRbBmbHnivYMBvdH215GJrgZyTbc7VSKa3yQ&s" },
       { name: "Refrigerator Repair", rating: 4, reviews: 8, image: "https://yashservicespune.com/wp-content/uploads/2020/12/refrigerator-repair.jpg" },
-      { name: "Oven Repair", rating: 5, reviews: 12, image: "https://media.istockphoto.com/id/912624814/photo/young-repairman-in-protective-workwear-fixing-oven-in-kitchen.jpg?s=612x612&w=0&k=20&c=VwXvVwAmTjPSPyGB7kLlNqWX8ZIva2tdyb-qvmAxEuc=" },
+      { name: "Oven Repair", rating: 5, reviews: 12, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQijURXtm09qE_Aa_c3XK8pR1YXoA5kF6yxWw&s" },
     ],
     "Maintenance and Repair": [
       { name: "General Maintenance", rating: 5, reviews: 10, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6waDU6O_96ig5eMPJ2Y_QT9oZpTiOxh3SZQ&s" },
@@ -72,7 +72,7 @@ const Services2 = () => {
       </div>
 
       {/* Service Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div className={`flex ${servicesData[selectedCategory].length <= 3 ? 'justify-center' : 'flex-wrap'} gap-6`}>
         {servicesData[selectedCategory].map((service, index) => (
           <div
             key={index}

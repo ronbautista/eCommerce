@@ -6,9 +6,9 @@ import Filter from './Filter'; // Import the Filter component
 import Login from './Login';
 import Nestfix from '../src/assets/Nestfix.png'; // Import the Login component
 
-function Header({ onSelectService }) { // Accept onSelectService as a prop
-    const [isModalOpen, setIsModalOpen] = useState(false); // State to manage modal visibility
-    const [isLoginOpen, setIsLoginOpen] = useState(false); // State to manage login visibility
+function Header({ onSelectService }) {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isLoginOpen, setIsLoginOpen] = useState(false);
 
     const handleOpenModal = () => {
         setIsModalOpen(true);
@@ -23,15 +23,13 @@ function Header({ onSelectService }) { // Accept onSelectService as a prop
     };
 
     const handleSelectService = (services) => {
-        onSelectService(services); // Pass the selected services back to the main component
-        setIsModalOpen(false); // Close the modal after selection
+        onSelectService(services);
+        setIsModalOpen(false);
     };
 
     return (
         <div className="flex flex-col items-center bg-white py-4">
-            {/* Header Content */}
             <div className="flex items-center justify-between p-4 bg-white shadow-md rounded-lg w-11/12 md:w-2/3">
-                {/* Profile Image */}
                 <div className="flex items-center">
                     <img
                         src={Nestfix}
@@ -40,7 +38,6 @@ function Header({ onSelectService }) { // Accept onSelectService as a prop
                     />
                 </div>
 
-                {/* Search and Filter Section */}
                 <div className="flex flex-row items-center space-x-2 flex-grow ml-4">
                     <input
                         type="text"
@@ -52,7 +49,7 @@ function Header({ onSelectService }) { // Accept onSelectService as a prop
                             <i className="fa-solid fa-magnifying-glass"></i>
                         </button>
                         <button 
-                            onClick={handleOpenModal} // Open modal on click
+                            onClick={handleOpenModal}
                             className="flex items-center border border-black text-black px-6 py-3 rounded-md hover:bg-black hover:text-white focus:outline-none"
                         >
                             <i className="fas fa-filter mr-2"></i>
@@ -61,7 +58,6 @@ function Header({ onSelectService }) { // Accept onSelectService as a prop
                     </div>
                 </div>
 
-                {/* Additional Links and Actions */}
                 <div className="flex items-center space-x-4 ml-4">
                     <a href="/become-skilled-worker" className="text-black hover:underline">
                         Become a skilled worker
@@ -70,11 +66,11 @@ function Header({ onSelectService }) { // Accept onSelectService as a prop
                         <i className="fas fa-bell text-gray-600"></i>
                         <span className="ml-1 text-gray-700">Notification</span>
                     </div>
-                    <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-2 space-y-2 md:space-y-0"> {/* Stack on small screens */}
+                    <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-2 space-y-2 md:space-y-0">
                         <button onClick={handleToggleLogin} className="text-black hover:underline">
                             Login
                         </button>
-                        <span className="hidden md:inline">|</span> {/* Hide the separator on small screens */}
+                        <span className="hidden md:inline">|</span>
                         <a href="/signup" className="text-black hover:underline">
                             Sign Up
                         </a>
@@ -82,11 +78,10 @@ function Header({ onSelectService }) { // Accept onSelectService as a prop
                 </div>
             </div>
 
-            {/* Modal Components */}
             <Filter isOpen={isModalOpen} onClose={handleCloseModal} onSelectFilter={handleSelectService} />
             <Login isOpen={isLoginOpen} onClose={handleToggleLogin} />
         </div>
     );
 }
 
-export default Header; 
+export default Header;

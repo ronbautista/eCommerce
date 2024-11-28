@@ -23,7 +23,6 @@ const Service4 = () => {
       { name: "Office Furniture Assembly", rating: 5, reviews: 6, image: "https://i.ytimg.com/vi/UrZL-c9UgP4/maxresdefault.jpg" },
       { name: "Outdoor Furniture Assembly", rating: 4, reviews: 4, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsWbMX5IWjU1ztFZny7ClwSSI3VNSfi9xicA&s" },
     ],
-
   };
 
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
@@ -55,7 +54,7 @@ const Service4 = () => {
       </div>
 
       {/* Service Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className={`flex ${servicesData[selectedCategory].length <= 3 ? 'justify-center' : 'flex-wrap'} gap-6`}>
         {servicesData[selectedCategory].map((service, index) => (
           <div
             key={index}

@@ -25,7 +25,7 @@ const Services3 = () => {
       { name: "Stain Removal", rating: 4, reviews: 4, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSwUlHyepOQnaZnNpPt1T_19MnyJ7sP_7a4Q&s" },
     ],
     "PEST CONTROL": [
-      { name: "Pest Inspection", rating:  5, reviews: 10, image: "https://www.houseopedia.com/wp-content/uploads/2021/01/Pest-Inspections-in-the-Home-Sales-Process-e1609536648904.jpeg" },
+      { name: "Pest Inspection", rating: 5, reviews: 10, image: "https://www.houseopedia.com/wp-content/uploads/2021/01/Pest-Inspections-in-the-Home-Sales-Process-e1609536648904.jpeg" },
       { name: "Pest Extermination", rating: 4, reviews: 8, image: "https://presidiopestmanagement.com/wp-content/uploads/2023/04/Bug-Extermination-600x366.jpg" },
       { name: "Preventive Treatments", rating: 5, reviews: 12, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgQu2Y94uuycZccMgqGcwZ1Nb1KkWrBWpKmQ&s" },
     ],
@@ -48,7 +48,7 @@ const Services3 = () => {
           <button
             key={index}
             onClick={() => setSelectedCategory(category)}
-            className={`px-4 py-2 text-black font-semibold rounded-lg shadow-md ${
+            className={`px-4 py-2 text-black font-semibold rounded-lg shadow md ${
               selectedCategory === category
                 ? "bg-white" // Change to white when selected
                 : "bg-transparent hover:bg-gray-200"
@@ -60,7 +60,7 @@ const Services3 = () => {
       </div>
 
       {/* Service Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div className={`flex ${servicesData[selectedCategory].length <= 3 ? 'justify-center' : 'flex-wrap'} gap-6`}>
         {servicesData[selectedCategory].map((service, index) => (
           <div
             key={index}

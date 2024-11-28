@@ -31,7 +31,7 @@ const Services1 = () => {
       { name: "Bathroom Renovation", rating: 5, reviews: 12, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfRbWyQ36ba9tQIg680NBmALs6QFiUbK2lyg&s" },
     ],
     "Improvement": [
-      { name: "Landscape Improvement", rating: 5, reviews: 10, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvSe4R4F4EspKV3480NEPAGUQIyDKfYk7c5A&s" },
+      { name: "Landscape Improvement", rating: 5, reviews: 10, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9 GcRvSe4R4F4EspKV3480NEPAGUQIyDKfYk7c5A&s" },
       { name: "Energy Efficiency Upgrade", rating: 4, reviews: 8, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzH5FrkQYVEClhZv49YEo1716Ft8fjnKKQUg&s" },
       { name: "Accessibility Improvement", rating: 5, reviews: 12, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlmCUaBVl0CaZpWP8V-xKnJ0LBOIthSVaGVw&s" },
     ],
@@ -66,7 +66,7 @@ const Services1 = () => {
       </div>
 
       {/* Service Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div className={`flex ${servicesData[selectedCategory].length <= 3 ? 'justify-center' : 'flex-wrap'} gap-6`}>
         {servicesData[selectedCategory].map((service, index) => (
           <div
             key={index}
