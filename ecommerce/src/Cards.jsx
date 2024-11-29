@@ -13,7 +13,8 @@ const Cards = () => {
             description: "Engineer.",
             rating: 4.5,
             aboutMe: "Nicca is a skilled engineer with years of experience in designing and maintaining electrical systems. Her attention to detail ensures top-notch performance.",
-            Service: "Maintenance and Repairs"
+            Service: "Maintenance and Repairs",
+            descriptionimg: "https://www.fracttal.com/hubfs/_c7242d8e-7aa8-4617-944e-29a06efcd8c2%20%28convert.io%29.webp"
         },
         {
             imageSrc: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Alice_Guo.png",
@@ -21,7 +22,8 @@ const Cards = () => {
             description: "Plumber.",
             rating: 4.5,
             aboutMe: "Alice specializes in plumbing solutions, providing efficient and reliable services for residential and commercial properties.",
-            Service: "Maintenance and Repairs"
+            Service: "Maintenance and Repairs",
+             descriptionimg: "https://www.fracttal.com/hubfs/_c7242d8e-7aa8-4617-944e-29a06efcd8c2%20%28convert.io%29.webp"
         },
         {
             imageSrc: "https://yt3.googleusercontent.com/ZJGwKd4H-lsmPo6cZ2WJ7aaU6uRJYOAmj-MDIDy_Se0sUu3iM41hG3KXgVz690DeEPRqxaKx=s900-c-k-c0x00ffffff-no-rj",
@@ -29,7 +31,8 @@ const Cards = () => {
             description: "Electrician.",
             rating: 4.5,
             aboutMe: "Bobby is a certified electrician with expertise in wiring, troubleshooting, and ensuring electrical safety for all projects.",
-            Service: "Maintenance and Repairs"
+            Service: "Maintenance and Repairs",
+             descriptionimg: "https://www.fracttal.com/hubfs/_c7242d8e-7aa8-4617-944e-29a06efcd8c2%20%28convert.io%29.webp"
         },
         {
             imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-94a8iYRLGmupzBb35bcteQuENtqVhfV1Fg&s",
@@ -37,7 +40,8 @@ const Cards = () => {
             description: "HVAC Specialist.",
             rating: 4.5,
             aboutMe: "Charlie excels in HVAC system installation and maintenance, ensuring optimal indoor air quality and temperature control.",
-            Service: "Maintenance and Repairs"
+            Service: "Maintenance and Repairs",
+             descriptionimg: "https://www.fracttal.com/hubfs/_c7242d8e-7aa8-4617-944e-29a06efcd8c2%20%28convert.io%29.webp"
         },
         {
             imageSrc: "https://truckeetherapy.com/wp-content/uploads/2023/10/David-scaled-e1698282774647-1024x937.webp",
@@ -45,7 +49,8 @@ const Cards = () => {
             description: "General Contractor.",
             rating: 4.5,
             aboutMe: "David has extensive experience managing construction projects, overseeing teams, and delivering quality results on time and within budget.",
-            Service: "Maintenance and Repairs"
+            Service: "Maintenance and Repairs",
+             descriptionimg: "https://www.fracttal.com/hubfs/_c7242d8e-7aa8-4617-944e-29a06efcd8c2%20%28convert.io%29.webp"
         },
         {
             imageSrc: "https://c8.alamy.com/comp/F8NEFD/female-handyman-in-overalls-isolated-on-white-F8NEFD.jpg",
@@ -53,7 +58,8 @@ const Cards = () => {
             description: "Handyman.",
             rating: 4.5,
             aboutMe: "Eva is a versatile handyman skilled in various repair and maintenance tasks, offering quick and dependable solutions.",
-            Service: "Maintenance and Repairs"
+            Service: "Maintenance and Repairs",
+             descriptionimg: "https://www.fracttal.com/hubfs/_c7242d8e-7aa8-4617-944e-29a06efcd8c2%20%28convert.io%29.webp"
         },
         // Cleaning and Sanitation
         {
@@ -62,7 +68,8 @@ const Cards = () => {
             description: "Cleaner.",
             rating: 4.5,
             aboutMe: "Daisy provides professional cleaning services, ensuring spotless and hygienic spaces for homes and offices.",
-            Service: "Cleaning and Sanitation"
+            Service: "Cleaning and Sanitation",
+             descriptionimg: "https://www.popcornfurniture.com/wp-content/uploads/2020/08/sanitizing.jpg"
         },
         {
             imageSrc: "https://cdn.openart.ai/published/user_2jfDE220Y2tmvXiLBGrlExCutfj/aCP9nbbk_oEzr_1024.webp",
@@ -70,7 +77,8 @@ const Cards = () => {
             description: "Sanitation Expert.",
             rating: 4.5,
             aboutMe: "Eva specializes in sanitation services, helping maintain clean and safe environments in various settings.",
-            Service: "Cleaning and Sanitation"
+            Service: "Cleaning and Sanitation",
+             descriptionimg: "https://www.popcornfurniture.com/wp-content/uploads/2020/08/sanitizing.jpg"
         },
         {
             imageSrc: "https://media.istockphoto.com/id/1417833172/photo/professional-cleaner-holding-a-basket-of-cleaning-products.jpg?s=612x612&w=0&k=20&c=bqhz1jDqSxEQB1OAvm9DP_7SWNKR2F8t7Mzfr4Hchm4=",
@@ -78,7 +86,8 @@ const Cards = () => {
             description: "Housekeeper.",
             rating: 4.5,
             aboutMe: "Frank is a dedicated housekeeper who ensures homes are clean, organized, and welcoming.",
-            Service: "Cleaning and Sanitation"
+            Service: "Cleaning and Sanitation",
+             descriptionimg: "https://www.popcornfurniture.com/wp-content/uploads/2020/08/sanitizing.jpg"
         },
         {
             imageSrc: "https://c8.alamy.com/comp/KER7J2/happy-young-female-janitor-with-cleaning-equipment-KER7J2.jpg",
@@ -86,7 +95,8 @@ const Cards = () => {
             description: "Janitor.",
             rating: 4.5,
             aboutMe: "Grace is a diligent janitor who takes pride in maintaining cleanliness and hygiene in every space.",
-            Service: "Cleaning and Sanitation"
+            Service: "Cleaning and Sanitation",
+             descriptionimg: "https://www.popcornfurniture.com/wp-content/uploads/2020/08/sanitizing.jpg"
         },
         {
             imageSrc: "https://via.placeholder.com/150",
@@ -94,7 +104,8 @@ const Cards = () => {
             description: "Commercial Cleaner.",
             rating: 4.5,
             aboutMe: "Henry specializes in cleaning commercial spaces, ensuring a spotless and professional environment.",
-            Service: "Cleaning and Sanitation"
+            Service: "Cleaning and Sanitation",
+             descriptionimg: "https://www.popcornfurniture.com/wp-content/uploads/2020/08/sanitizing.jpg"
         },
         {
             imageSrc: "https://vivahr.com/wp-content/uploads/2020/07/Residential-Cleaner-Job-Description.jpg",
@@ -102,7 +113,8 @@ const Cards = () => {
             description: "Residential Cleaner.",
             rating: 4.5,
             aboutMe: "Isabella provides thorough cleaning services, making homes shine with her attention to detail.",
-            Service: "Cleaning and Sanitation"
+            Service: "Cleaning and Sanitation",
+             descriptionimg: "https://www.popcornfurniture.com/wp-content/uploads/2020/08/sanitizing.jpg"
         },
         // Landscaping
         {
@@ -111,7 +123,8 @@ const Cards = () => {
             description: "Landscaper.",
             rating: 4.5,
             aboutMe: "Jack transforms outdoor spaces into beautiful landscapes, tailored to your vision.",
-            Service: "Landscaping"
+            Service: "Landscaping",
+             descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
         },
         {
             imageSrc: "https://www.yourfreecareertest.com/wp-content/uploads/2017/10/nursary_worker.jpg",
@@ -119,7 +132,8 @@ const Cards = () => {
             description: "Gardener.",
             rating: 4.5,
             aboutMe: "Kathy is a passionate gardener who brings gardens to life with her green thumb.",
-            Service: "Landscaping"
+            Service: "Landscaping",
+             descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
         },
         {
             imageSrc: "https://www.checkatrade.com/blog/wp-content/uploads/2020/10/Property-maintenance-cost.jpg",
@@ -127,7 +141,8 @@ const Cards = () => {
             description: "Outdoor Maintenance.",
             rating: 4.5,
             aboutMe: "Liam ensures outdoor areas are maintained to perfection, no matter the season.",
-            Service: "Landscaping"
+            Service: "Landscaping",
+             descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
         },
         {
             imageSrc: "https://worldlandscapearchitect.com/wp-content/uploads/2021/04/John-Yuen.jpg",
@@ -135,7 +150,8 @@ const Cards = () => {
             description: "Landscape Designer.",
             rating: 4.5,
             aboutMe: "Kian creates stunning outdoor designs that harmonize with nature and client preferences.",
-            Service: "Landscaping"
+            Service: "Landscaping",
+             descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
         },
         {
             imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR30fTbv_tKbzsGdN0cpAnhIHyH80JLVP-A5g&s",
@@ -143,7 +159,8 @@ const Cards = () => {
             description: "Irrigation Specialist.",
             rating: 4.5,
             aboutMe: "Noah designs and maintains irrigation systems to keep landscapes thriving and healthy.",
-            Service: "Landscaping"
+            Service: "Landscaping",
+             descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
         },
         {
             imageSrc: "https://media.istockphoto.com/id/1176789148/photo/female-tree-surgeon-pulling-tree-branch-through-gate.jpg?s=612x612&w=0&k=20&c=Zvio7uiiGGn3CqMAbv12b8oRU_Chto8YwRewLqV_GFg=",
@@ -151,7 +168,8 @@ const Cards = () => {
             description: "Tree Surgeon.",
             rating: 4.5,
             aboutMe: "Olivia is an experienced tree surgeon, ensuring the health and safety of your trees.",
-            Service: "Landscaping"
+            Service: "Landscaping",
+             descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
         },
         // Installation and Construction
         {
@@ -160,7 +178,8 @@ const Cards = () => {
             description: "Installation Technician.",
             rating: 4.5,
             aboutMe: "George excels in installing and maintaining a variety of systems, offering reliable service every time.",
-            Service: "Installation and Construction"
+            Service: "Installation and Construction",
+             descriptionimg: "https://media.istockphoto.com/id/157398786/photo/african-american-man-renovating-home-interior.jpg?s=612x612&w=0&k=20&c=C_Yb1vd1VXHxY3UZNWQyZSsPuH43a6UNtxEoNq3RUHM="
         },
         {
             imageSrc: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Alice_Guo.png",
@@ -168,7 +187,8 @@ const Cards = () => {
             description: "Appliance Installer.",
             rating: 4.5,
             aboutMe: "Alice is an expert appliance installer, ensuring seamless setup for all types of household devices.",
-            Service: "Installation and Construction"
+            Service: "Installation and Construction",
+            descriptionimg: "https://media.istockphoto.com/id/157398786/photo/african-american-man-renovating-home-interior.jpg?s=612x612&w=0&k=20&c=C_Yb1vd1VXHxY3UZNWQyZSsPuH43a6UNtxEoNq3RUHM="
         },
         {
             imageSrc: "https://www.meritize.com/wp-content/uploads/2021/03/Electrical-Lineman-1024x636.jpg",
@@ -176,7 +196,8 @@ const Cards = () => {
             description: "Electrical Installer.",
             rating: 4.5,
             aboutMe: "Ian is a skilled electrical installer who guarantees safety and efficiency in every project.",
-            Service: "Installation and Construction"
+            Service: "Installation and Construction",
+             descriptionimg: "https://media.istockphoto.com/id/157398786/photo/african-american-man-renovating-home-interior.jpg?s=612x612&w=0&k=20&c=C_Yb1vd1VXHxY3UZNWQyZSsPuH43a6UNtxEoNq3RUHM="
         },
         {
             imageSrc: "https://static.vecteezy.com/system/resources/previews/040/332/665/non_2x/ai-generated-portrait-of-a-worker-man-isolated-on-transparent-background-free-png.png",
@@ -184,7 +205,8 @@ const Cards = () => {
             description: "Plumbing Installer.",
             rating: 4.5,
             aboutMe: "Jack specializes in plumbing installation, delivering dependable and high-quality results.",
-            Service: "Installation and Construction"
+            Service: "Installation and Construction",
+             descriptionimg: "https://media.istockphoto.com/id/157398786/photo/african-american-man-renovating-home-interior.jpg?s=612x612&w=0&k=20&c=C_Yb1vd1VXHxY3UZNWQyZSsPuH43a6UNtxEoNq3RUHM="
         },
         {
             imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF-D5jwklHjuHU97YFbtvYbF-BslN39Hd5Ew&s",
@@ -192,7 +214,8 @@ const Cards = () => {
             description: "Window Installer.",
             rating: 4.5,
             aboutMe: "Kathy is an experienced window installer who ensures durability and precision in her work.",
-            Service: "Installation and Construction"
+            Service: "Installation and Construction",
+             descriptionimg: "https://media.istockphoto.com/id/157398786/photo/african-american-man-renovating-home-interior.jpg?s=612x612&w=0&k=20&c=C_Yb1vd1VXHxY3UZNWQyZSsPuH43a6UNtxEoNq3RUHM="
         },
         {
             imageSrc: "https://www.floorfactors.com/wp-content/uploads/2020/06/man-installing-flooring-header.jpg",
@@ -200,7 +223,8 @@ const Cards = () => {
             description: "Flooring Installer.",
             rating: 4.5,
             aboutMe: "Liam is dedicated to delivering perfect flooring installations with attention to every detail.",
-            Service: "Installation and Construction"
+            Service: "Installation and Construction",
+             descriptionimg: "https://media.istockphoto.com/id/157398786/photo/african-american-man-renovating-home-interior.jpg?s=612x612&w=0&k=20&c=C_Yb1vd1VXHxY3UZNWQyZSsPuH43a6UNtxEoNq3RUHM="
         },
         {
             imageSrc: "https://african.land/oc-content/plugins/blog/img/blog/341.jpg",
@@ -208,7 +232,8 @@ const Cards = () => {
             description: "Remodeling Expert.",
             rating: 4.5,
             aboutMe: "Paul is a remodeling expert with a keen eye for transforming spaces into functional and aesthetic masterpieces.",
-            Service: "Installation and Construction"
+            Service: "Installation and Construction",
+             descriptionimg: "https://media.istockphoto.com/id/157398786/photo/african-american-man-renovating-home-interior.jpg?s=612x612&w=0&k=20&c=C_Yb1vd1VXHxY3UZNWQyZSsPuH43a6UNtxEoNq3RUHM="
         },
         {
             imageSrc: "https://blog.bulbthings.com/wp-content/uploads/2023/02/shutterstock_2190938193.jpg",
@@ -216,7 +241,8 @@ const Cards = () => {
             description: "Construction Manager.",
             rating: 4.5,
             aboutMe: "Quinn is a dedicated construction manager who ensures projects are completed on time, within budget, and with high-quality results.",
-            Service: "Installation and Construction"
+            Service: "Installation and Construction",
+             descriptionimg: "https://media.istockphoto.com/id/157398786/photo/african-american-man-renovating-home-interior.jpg?s=612x612&w=0&k=20&c=C_Yb1vd1VXHxY3UZNWQyZSsPuH43a6UNtxEoNq3RUHM="
         },
         {
             imageSrc: "https://www.shutterstock.com/shutterstock/photos/2262282779/display_1500/stock-photo-smiling-female-architect-using-laptop-inspecting-skyscraper-model-in-architectural-modern-office-2262282779.jpg",
@@ -224,10 +250,10 @@ const Cards = () => {
             description: "Architect.",
             rating: 4.5,
             aboutMe: "Rita is a visionary architect who brings innovative designs and creative solutions to life, shaping modern and sustainable spaces.",
-            Service: "Installation and Construction"
+            Service: "Installation and Construction",
+             descriptionimg: "https://media.istockphoto.com/id/157398786/photo/african-american-man-renovating-home-interior.jpg?s=612x612&w=0&k=20&c=C_Yb1vd1VXHxY3UZNWQyZSsPuH43a6UNtxEoNq3RUHM="
         }
     ];
-
 
 
     const handleCardClick = (data) => {
@@ -237,7 +263,8 @@ const Cards = () => {
                 title: data.title,
                 description: data.description,
                 rating: data.rating,
-                aboutMe: data.aboutMe
+                aboutMe: data.aboutMe,
+                descriptionimg: data.descriptionimg // Pass the description image
             }
         });
     };

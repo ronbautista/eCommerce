@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 const Aliceguo = () => {
     const location = useLocation();
     const navigate = useNavigate();
-    const { imageSrc, title, description, rating, aboutMe } = location.state || {};
+    const { imageSrc, title, description, rating, aboutMe , descriptionimg } = location.state || {};
 
     // Mock list of reviews
     const reviewList = [
@@ -68,12 +68,12 @@ const Aliceguo = () => {
         <div className="max-w-sm text-left mx-4 mt-12 md:mt-0">
             <h2 className="text-lg font-bold uppercase mb-4">Services</h2>
             <img
-                src="https://housing.com/news/wp-content/uploads/2023/03/Plumbing-services-Know-types-and-how-to-choose-01.png"
+                src={descriptionimg}
                 alt="Plumbing Services"
                 className="rounded-lg mb-4"
                 style={{ width: "300px", height: "200px" }} // Adjusted size
             />
-            <h3 className="text-xl font-bold">Plumbing Services</h3>
+            <h3 className="text-xl font-bold">{description}</h3>
             <p className="text-gray-600 mb-4">- starts at ₱500 -</p>
 
             {/* Gradient Border Button */}
