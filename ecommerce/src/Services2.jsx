@@ -12,36 +12,37 @@ const Services2 = () => {
 
   const servicesData = {
     "Plumbing": [
-      { name: "Leak Repair", rating: 4, reviews: 10, image: "https://cdn.prod.website-files.com/6361339b831c262ea482dcfa/6579cffd09747cced03ecc70_pipe%20repair.jpg" },
-      { name: "Pipe Installation", rating: 5, reviews: 15, image: "https://i.ytimg.com/vi/r9i5E9vsjEQ/maxresdefault.jpg" },
-      { name: "Drain Cleaning", rating: 4, reviews: 8, image: "https://www.facilitiesnet.com/resources/editorial/2022/19276-DrainCleaning.jpg" },
+      { name: "Daniel Wilson", rating: 4, reviews: 10, image: "https://cdn.prod.website-files.com/6361339b831c262ea482dcfa/6579cffd09747cced03ecc70_pipe%20repair.jpg" },
+      { name: "Emma Davis", rating: 5, reviews: 15, image: "https://i.ytimg.com/vi/r9i5E9vsjEQ/maxresdefault.jpg" },
+      { name: "James Taylor", rating: 4, reviews: 8, image: "https://www.facilitiesnet.com/resources/editorial/2022/19276-DrainCleaning.jpg" },
     ],
     "Electrical": [
-      { name: "Wiring Installation", rating: 5, reviews: 20, image: "https://electricianphilippines.com/wp-content/uploads/2023/07/residential-and-commercial-electrical-installation.webp" },
-      { name: "Circuit Breaker Replacement", rating: 4, reviews: 12, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5HbwdKPW9UghD7eMBIKNjPoS5TiepSVHZuA&s" },
-      { name: "Lighting Installation", rating: 4, reviews: 5, image: "https://nicholson-hvac.com/wp-content/uploads/2022/10/Lighting-Installation-Professional-Image.jpg" },
+      { name: "Sophia Johnson", rating: 5, reviews: 20, image: "https://electricianphilippines.com/wp-content/uploads/2023/07/residential-and-commercial-electrical-installation.webp" },
+      { name: "Michael Brown", rating: 4, reviews: 12, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5HbwdKPW9UghD7eMBIKNjPoS5TiepSVHZuA&s" },
+      { name: "Lucas Scott", rating: 4, reviews: 5, image: "https://nicholson-hvac.com/wp-content/uploads/2022/10/Lighting-Installation-Professional-Image.jpg" },
     ],
     "HVAC": [
-      { name: "AC Repair", rating: 4, reviews: 9, image: "https://onesourcehomeservice.com/wp-content/uploads/2023/05/AC_Repair_Cost_279259535-1.webp" },
-      { name: "Furnace Installation", rating: 5, reviews: 6, image: "https://fire-and-ice-cdn.s3.us-east-2.amazonaws.com/blog/furnace-installation-process/feature.jpg" },
-      { name: "Vent Cleaning", rating: 4, reviews: 4, image: "https://advancedairsolutionsoh.com/wp-content/uploads/2017/12/duct-and-dryer-vent-cleaning-advanced-air-solutions-akron-3.jpg" },
+      { name: "Olivia Harris", rating: 4, reviews: 9, image: "https://onesourcehomeservice.com/wp-content/uploads/2023/05/AC_Repair_Cost_279259535-1.webp" },
+      { name: "David Martinez", rating: 5, reviews: 6, image: "https://fire-and-ice-cdn.s3.us-east-2.amazonaws.com/blog/furnace-installation-process/feature.jpg" },
+      { name: "Isabella Walker", rating: 4, reviews: 4, image: "https://advancedairsolutionsoh.com/wp-content/uploads/2017/12/duct-and-dryer-vent-cleaning-advanced-air-solutions-akron-3.jpg" },
     ],
     "Roofing": [
-      { name: "Roof Inspection", rating: 5, reviews: 10, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQCsJLTYoqOBEwdVL21DGUt0y0iUUO4kuRXw&s" },
-      { name: "Shingle Replacement", rating: 4, reviews: 8, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgu0rWCSrlaYyf8i_TvM9U8Qc4sZe87koJpA&s" },
-      { name: "Gutter Installation", rating: 5, reviews: 12, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREHzvQwCKvAKEsj6Gh4ye6HocvDa4xVKrWaQ&s" },
+      { name: "Liam Clark", rating: 5, reviews: 10, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQCsJLTYoqOBEwdVL21DGUt0y0iUUO4kuRXw&s" },
+      { name: "Sophia Young", rating: 4, reviews: 8, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgu0rWCSrlaYyf8i_TvM9U8Qc4sZe87koJpA&s" },
+      { name: "Ethan Lee", rating: 5, reviews: 12, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREHzvQwCKvAKEsj6Gh4ye6HocvDa4xVKrWaQ&s" },
     ],
     "Appliance Repairs": [
-      { name: "Washing Machine Repair", rating: 5, reviews: 10, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRbBmbHnivYMBvdH215GJrgZyTbc7VSKa3yQ&s" },
-      { name: "Refrigerator Repair", rating: 4, reviews: 8, image: "https://yashservicespune.com/wp-content/uploads/2020/12/refrigerator-repair.jpg" },
-      { name: "Oven Repair", rating: 5, reviews: 12, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQijURXtm09qE_Aa_c3XK8pR1YXoA5kF6yxWw&s" },
+      { name: "Henry Wilson", rating: 5, reviews: 10, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRbBmbHnivYMBvdH215GJrgZyTbc7VSKa3yQ&s" },
+      { name: "Megan Taylor", rating: 4, reviews: 8, image: "https://yashservicespune.com/wp-content/uploads/2020/12/refrigerator-repair.jpg" },
+      { name: "Ava Anderson", rating: 5, reviews: 12, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQijURXtm09qE_Aa_c3XK8pR1YXoA5kF6yxWw&s" },
     ],
     "Maintenance and Repair": [
-      { name: "General Maintenance", rating: 5, reviews: 10, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6waDU6O_96ig5eMPJ2Y_QT9oZpTiOxh3SZQ&s" },
-      { name: "Furniture Assembly", rating: 4, reviews: 8, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFtzKfl0s0TMwB5fSK4M2MlBqeZWlOuDsL3Q&s" },
-      { name: "Home Repair Services", rating: 5, reviews: 12, image: "https://blog.renovationfind.com/wp-content/uploads/2023/12/Exterior-Renovation-Edmonton-1.jpg" },
+      { name: "Lucas Miller", rating: 5, reviews: 10, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6waDU6O_96ig5eMPJ2Y_QT9oZpTiOxh3SZQ&s" },
+      { name: "Emily White", rating: 4, reviews: 8, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFtzKfl0s0TMwB5fSK4M2MlBqeZWlOuDsL3Q&s" },
+      { name: "Daniel Harris", rating: 5, reviews: 12, image: "https://blog.renovationfind.com/wp-content/uploads/2023/12/Exterior-Renovation-Edmonton-1.jpg" },
     ],
   };
+  
 
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 

@@ -9,21 +9,22 @@ const Service4 = () => {
 
   const servicesData = {
     "APPLIANCE INSTALLATION": [
-      { name: "Refrigerator Installation", rating: 4, reviews: 10, image: "https://media.istockphoto.com/id/1180607321/photo/two-young-male-movers-placing-steel-refrigerator-in-kitchen.jpg?s=612x612&w=0&k=20&c=PW4dVclZ9wCgc-qq6BLHuMKzzStEW2N4-DxmlUk0K54=" },
-      { name: "Washing Machine Installation", rating: 5, reviews: 15, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7bbcsNZjyrGeCI9RMHbQ3FqfjMQ9ZBDoMuA&s" },
-      { name: "Dishwasher Installation", rating: 4, reviews: 8, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwpwaV59nA5DDoQu1ddfwQUDLZso8qP8kqlA&s" },
+      { name: "Daniel Thompson", rating: 4, reviews: 10, image: "https://media.istockphoto.com/id/1180607321/photo/two-young-male-movers-placing-steel-refrigerator-in-kitchen.jpg?s=612x612&w=0&k=20&c=PW4dVclZ9wCgc-qq6BLHuMKzzStEW2N4-DxmlUk0K54=" },
+      { name: "Sophia Martinez", rating: 5, reviews: 15, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7bbcsNZjyrGeCI9RMHbQ3FqfjMQ9ZBDoMuA&s" },
+      { name: "James Anderson", rating: 4, reviews: 8, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwpwaV59nA5DDoQu1ddfwQUDLZso8qP8kqlA&s" },
     ],
     "SMART HOME DEVICES INSTALLATION": [
-      { name: "Smart Thermostat Installation", rating: 5, reviews: 20, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBLBK5a93CkEyfkKW0I6DaiV0rz0ql_qyjFQ&s" },
-      { name: "Smart Security Camera Installation", rating: 4, reviews: 12, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuxhntaJyFiRe0IZrz_49hCOv79yV8Vs0PLQ&s" },
-      { name: "Smart Lighting Installation", rating: 4, reviews: 5, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlhx4YDsKbI8iKfIPJfFP1MQY5AXvSh7WfiA&s" },
+      { name: "Isabella Clark", rating: 5, reviews: 20, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBLBK5a93CkEyfkKW0I6DaiV0rz0ql_qyjFQ&s" },
+      { name: "Ethan Robinson", rating: 4, reviews: 12, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuxhntaJyFiRe0IZrz_49hCOv79yV8Vs0PLQ&s" },
+      { name: "Ava Walker", rating: 4, reviews: 5, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlhx4YDsKbI8iKfIPJfFP1MQY5AXvSh7WfiA&s" },
     ],
     "FURNITURE ASSEMBLY": [
-      { name: "IKEA Furniture Assembly", rating: 4, reviews: 9, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEAnSmD920fHFR37z6vQtPRKirO4JQfqJxgA&s" },
-      { name: "Office Furniture Assembly", rating: 5, reviews: 6, image: "https://i.ytimg.com/vi/UrZL-c9UgP4/maxresdefault.jpg" },
-      { name: "Outdoor Furniture Assembly", rating: 4, reviews: 4, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsWbMX5IWjU1ztFZny7ClwSSI3VNSfi9xicA&s" },
+      { name: "Michael Harris", rating: 4, reviews: 9, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEAnSmD920fHFR37z6vQtPRKirO4JQfqJxgA&s" },
+      { name: "Emma Davis", rating: 5, reviews: 6, image: "https://i.ytimg.com/vi/UrZL-c9UgP4/maxresdefault.jpg" },
+      { name: "Lucas Miller", rating: 4, reviews: 4, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsWbMX5IWjU1ztFZny7ClwSSI3VNSfi9xicA&s" },
     ],
   };
+  
 
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 

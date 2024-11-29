@@ -8,89 +8,89 @@ const Service5 = () => {
     "WATER FEATURES",
   ];
 
-  const servicesData = {
-    "LAWN CARE": [
-      {
-        name: "Mowing and Trimming",
-        rating: 5,
-        reviews: 20,
-        image: "https://apluslawn.com/files/account/images/content-mowing-a-lawn.webp",
-      },
-      {
-        name: "Fertilizing",
-        rating: 4,
-        reviews: 12,
-        image: "https://cdn.mos.cms.futurecdn.net/Z6FyBvDuHAyhf9iUyF9CEn-415-80.jpg",
-      },
-      {
-        name: "Aeration",
-        rating: 4,
-        reviews: 8,
-        image: "https://transform.octanecdn.com/fit/1600x900/https://octanecdn.com/turfmasterslawncarecom/Aeration-with-aerator-800x494.jpg",
-      },
-    ],
-    "PLANTING & GARDENING": [
-      {
-        name: "Shrub Planting",
-        rating: 4,
-        reviews: 10,
-        image: "https://transform.octanecdn.com/fit/1600x900/https://octanecdn.com/turfmasterslawncarecom/turfmasterslawncarecom_264654237.jpeg",
-      },
-      {
-        name: "Garden Design",
-        rating: 5,
-        reviews: 15,
-        image: "https://cdn.mos.cms.futurecdn.net/zTxpYGWrvsqEBqSUFnMUTd-1200-80.jpg",
-      },
-      {
-        name: "Weeding",
-        rating: 3,
-        reviews: 6,
-        image: "https://www.bhg.com/thmb/P0yvlpBsKznQ8A1UVrmWOKZriWY=/2000x0/filters:no_upscale():strip_icc()/person-pulling-weed-from-garden-2000-85a9256adad24c7cb99a8d7a43a13d08.jpg",
-      },
-    ],
-    "HARDSCAPING": [
-      {
-        name: "Patio Construction",
-        rating: 5,
-        reviews: 18,
-        image: "https://images.landscapingnetwork.com/pictures/images/900x705Max/site_8/building-a-patio-landscaping-network_8897.jpg",
-      },
-      {
-        name: "Walkways Installation",
-        rating: 4,
-        reviews: 14,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HPukFlqAtwZhJbInhklfOoSCVsmYdNKNzg&s",
-      },
-      {
-        name: "Retaining Walls",
-        rating: 5,
-        reviews: 11,
-        image: "https://cornerstonewallsolutions.com/wp-content/uploads/2021/11/CornerStone-100-Planter-Wall-with-Step-Ups.jpg",
-      },
-    ],
-    "WATER FEATURES": [
-      {
-        name: "Fountain Installation",
-        rating: 5,
-        reviews: 8,
-        image: "https://carvedstonecreations.com/wp-content/uploads/2017/05/Fountain-Concrete-Slab-How-To-7.jpg",
-      },
-      {
-        name: "Pond Design",
-        rating: 4,
-        reviews: 10,
-        image: "https://images.landscapingnetwork.com/pictures/images/973x490Exact_0x90/swimming-pool_6/pond-grace-design-associates_2562.jpg",
-      },
-      {
-        name: "Waterfall Features",
-        rating: 5,
-        reviews: 7,
-        image: "https://poolcraft.ca/wp-content/uploads/2019/05/Images_Banner_Upgrades_WaterFeatures.jpg",
-      },
-    ],
-  };
-
+ const servicesData = {
+  "LAWN CARE": [
+    {
+      name: "Liam White",
+      rating: 5,
+      reviews: 20,
+      image: "https://apluslawn.com/files/account/images/content-mowing-a-lawn.webp",
+    },
+    {
+      name: "Sophia Green",
+      rating: 4,
+      reviews: 12,
+      image: "https://cdn.mos.cms.futurecdn.net/Z6FyBvDuHAyhf9iUyF9CEn-415-80.jpg",
+    },
+    {
+      name: "James Black",
+      rating: 4,
+      reviews: 8,
+      image: "https://transform.octanecdn.com/fit/1600x900/https://octanecdn.com/turfmasterslawncarecom/Aeration-with-aerator-800x494.jpg",
+    },
+  ],
+  "PLANTING & GARDENING": [
+    {
+      name: "Charlotte Brooks",
+      rating: 4,
+      reviews: 10,
+      image: "https://transform.octanecdn.com/fit/1600x900/https://octanecdn.com/turfmasterslawncarecom/turfmasterslawncarecom_264654237.jpeg",
+    },
+    {
+      name: "Olivia White",
+      rating: 5,
+      reviews: 15,
+      image: "https://cdn.mos.cms.futurecdn.net/zTxpYGWrvsqEBqSUFnMUTd-1200-80.jpg",
+    },
+    {
+      name: "Ethan Carter",
+      rating: 3,
+      reviews: 6,
+      image: "https://www.bhg.com/thmb/P0yvlpBsKznQ8A1UVrmWOKZriWY=/2000x0/filters:no_upscale():strip_icc()/person-pulling-weed-from-garden-2000-85a9256adad24c7cb99a8d7a43a13d08.jpg",
+    },
+  ],
+  "HARDSCAPING": [
+    {
+      name: "Megan King",
+      rating: 5,
+      reviews: 18,
+      image: "https://images.landscapingnetwork.com/pictures/images/900x705Max/site_8/building-a-patio-landscaping-network_8897.jpg",
+    },
+    {
+      name: "Daniel Scott",
+      rating: 4,
+      reviews: 14,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9HPukFlqAtwZhJbInhklfOoSCVsmYdNKNzg&s",
+    },
+    {
+      name: "Ava Mitchell",
+      rating: 5,
+      reviews: 11,
+      image: "https://cornerstonewallsolutions.com/wp-content/uploads/2021/11/CornerStone-100-Planter-Wall-with-Step-Ups.jpg",
+    },
+  ],
+  "WATER FEATURES": [
+    {
+      name: "Lucas Harris",
+      rating: 5,
+      reviews: 8,
+      image: "https://carvedstonecreations.com/wp-content/uploads/2017/05/Fountain-Concrete-Slab-How-To-7.jpg",
+    },
+    {
+      name: "Emma Taylor",
+      rating: 4,
+      reviews: 10,
+      image: "https://images.landscapingnetwork.com/pictures/images/973x490Exact_0x90/swimming-pool_6/pond-grace-design-associates_2562.jpg",
+    },
+    {
+      name: "Noah Lewis",
+      rating: 5,
+      reviews: 7,
+      image: "https://poolcraft.ca/wp-content/uploads/2019/05/Images_Banner_Upgrades_WaterFeatures.jpg",
+    },
+  ],
+};
+  
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
 
   return (

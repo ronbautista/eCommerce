@@ -30,7 +30,7 @@ const Aliceguo = () => {
                     <h1 className="text-6xl text-gray-800 shadow-lg">Hello, I am</h1>
                     <h1 className="text-6xl text-gray-800 shadow-lg">{title || "Tessa Castillio"}</h1>
                     <h1 className="text-6xl text-gray-800 shadow-lg">_ _ _ _ _ _ _ _</h1>
-                    <p className="text-gray-600">Passionate Plumbing Done Right- With a smile</p>
+                    <p className="text-gray-600">Committed Service Excellence – Delivered with a Smile</p>
                 </div>
             </div>
 
