@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useSwipeable } from 'react-swipeable';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Carousel({ images }) {
@@ -8,28 +9,38 @@ function Carousel({ images }) {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     };
 
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    };
+
     useEffect(() => {
-        const interval = setInterval(() => {
-            nextSlide();
-        }, 5000); // Auto-slide every 5 seconds
+        const interval = setInterval(nextSlide, 5000); // Auto-slide every 5 seconds
         return () => clearInterval(interval);
     }, []);
 
+    const handlers = useSwipeable({
+        onSwipedLeft: nextSlide,
+        onSwipedRight: prevSlide,
+        preventDefaultTouchmoveEvent: true,
+        trackTouch: true,
+    });
+
     return (
-        <div className="relative w-full h-64 overflow-hidden"> {/* Set a fixed height for the carousel */}
-            {/* Display current image with object-cover */}
+        <div
+            {...handlers}
+            className="relative w-full h-[10rem] sm:h-[11rem] md:h-[12rem] lg:h-[13rem] overflow-hidden rounded-md" // Adjusted height
+        >
             <img
                 src={images[currentIndex]}
                 alt={`Slide ${currentIndex + 1}`}
-                className="w-full h-full object-cover rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105" // Add hover effect
+                className="w-full h-full object-cover transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
-            {/* Carousel indicators (dots) */}
             <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
                 {images.map((_, index) => (
                     <div
                         key={index}
-                        className={`w-3 h-3 rounded-full cursor-pointer ${
-                            currentIndex === index ? 'bg-green-500' : 'bg-gray-300'
+                        className={`w-2 h-2 rounded-full cursor-pointer ${
+                            currentIndex === index ? 'bg-green-500 scale-110' : 'bg-gray-300 hover:bg-green-400'
                         }`}
                         onClick={() => setCurrentIndex(index)}
                     />
@@ -55,22 +66,27 @@ function App() {
 
     return (
         <div className="flex flex-col items-center justify-center bg-white py-4">
-            <div className="flex items-center justify-between p-4 bg-white shadow-md rounded-lg w-3/4"> {/* Increased width to 3/4 */}
-                {/* Left section: Advertisement of Services */}
-                <div className="w-full md:w-3/4 p-0"> {/* Full width on small screens, 3/4 on medium and above */}
+            {/* Carousel Section */}
+            <div className="flex flex-col md:flex-row items-center justify-between p-4 bg-white shadow-md rounded-lg w-full max-w-[calc(100%-40px)] mx-auto"> {/* Adjusted width for more space */}
+                {/* Left Section: Services */}
+                <div className="w-full md:w-3/4">
                     <Carousel images={serviceImages} />
                 </div>
-
-                {/* Right section: Advertisement for Renting Tools */}
-                <div className="w-64 p-0 ml-4"> {/* Increased fixed width to 64 and added margin-left */}
+    
+                {/* Right Section: Tools */}
+                <div className="w-full md:w-1/4 mt-4 md:mt-0 md:ml-4">
                     <Carousel images={toolImages} />
                 </div>
             </div>
-
-            {/* Footer section */}
-            <div className="mt-8 text-center">
-                <h1 className="text-8xl font-bold text-green-600">NESTFIX</h1> {/* Increased font size */}
-                <p className="text-3xl text-gray-700">Top care for your home.</p> {/* Increased font size */}
+    
+            {/* Footer Section */}
+            <div className="mt-6 text-center">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-600">
+                    NESTFIX
+                </h1>
+                <p className="text-sm sm:text-md lg:text-lg text-gray-700">
+                    Top care for your home.
+                </p>
             </div>
         </div>
     );

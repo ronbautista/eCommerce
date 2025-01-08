@@ -29,7 +29,7 @@ const BookingComponent = () => {
           <div className="bg-white p-6 rounded-lg shadow-md w-full lg:w-2/3">
             <h2 className="text-lg font-bold mb-4">Date</h2>
             <p className="text-gray-600 text-sm mb-4">
-              Earliest available appointment: <span className="font-bold">18 November 2024</span>
+              Earliest available appointment: <span className="font-bold"> January 2025</span>
             </p>
             <p className="text-red-500 text-sm mb-4">
               To the extent possible, additional slots are made regularly.

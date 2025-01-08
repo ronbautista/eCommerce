@@ -3,10 +3,8 @@ import React, { useState } from "react";
 const Services1 = () => {
   const categories = [
     "Painting / Wall Repair",
-    "Remodelling",
-    "Door & Window Replacement",
-    "Renovation",
-    "Improvement",
+    "Renovation and Improvement",
+    "Door and Window Replacement",
   ];
 
   const servicesData = {
@@ -15,12 +13,12 @@ const Services1 = () => {
       { name: "Emily Johnson", rating: 5, reviews: 15, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnwUOdLU5d6JIavZ02v2KN9ZPZTMGFyRp3QA&s" },
       { name: "Michael Brown", rating: 4, reviews: 8, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHzZ7NmIxGMEdwdzoTSw26KmSlf9nzo6VjiA&s" },
     ],
-    "Remodelling": [
+    "Renovation and Improvement": [
       { name: "Sarah Davis", rating: 5, reviews: 20, image: "https://media.istockphoto.com/id/2151288705/photo/architect-renovating-a-house-and-holding-designs-at-the-construction-site.jpg?s=612x612&w=0&k=20&c=R--L7COPg5XIQjGHkF-EAlVvfHELS73Xg8chhvEkix8=" },
       { name: "David Martinez", rating: 4, reviews: 12, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW1QRZVHPODn9m_oJ8rfAQKb_Jalu4W4VzwA&s" },
       { name: "Jessica Wilson", rating: 4, reviews: 5, image: "https://dlqxt4mfnxo6k.cloudfront.net/garmanbuilders.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9mOTIxOTljOThhOTE4OWNjYzgwNWFlODBlODM5OWQyNy5qcGVn/preserve/webp/1200/1200" },
     ],
-    "Door & Window Replacement": [
+    "Door and Window Replacement": [
       { name: "Chris Lee", rating: 4, reviews: 9, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYfCS4Hv9sJE5hgkrxo8yb3uZ6PcWP6biZpg&s" },
       { name: "Karen Taylor", rating: 5, reviews: 6, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Oclqbu-9afMRbh2FhIDpjOjdBJhJmWpsdA&s" },
       { name: "James Anderson", rating: 4, reviews: 4, image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRex2OSQkWFo8VAex-FVp5ZpAdSJtS9TRRdDg&s" },

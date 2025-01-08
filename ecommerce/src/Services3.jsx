@@ -4,7 +4,6 @@ const Services3 = () => {
   const categories = [
     "GENERAL HOUSE CLEANING",
     "WINDOW CLEANING",
-    "CARPET / UPHOLSTERY CLEANING",
     "PEST CONTROL",
   ];
 

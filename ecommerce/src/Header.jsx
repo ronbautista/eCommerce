@@ -29,7 +29,7 @@ function Header({ onSelectService }) {
 
     return (
         <div className="flex flex-col items-center bg-white py-4">
-            <div className="flex items-center justify-between p-4 bg-white shadow-md rounded-lg w-11/12 md:w-2/3">
+            <div className="flex items-center justify-between p-4 bg-white shadow-md rounded-lg w-full h-16"> {/* Set width to full and fixed height */}
                 <div className="flex items-center">
                     <img
                         src={Nestfix}
@@ -37,7 +37,7 @@ function Header({ onSelectService }) {
                         className="w-10 h-10 rounded-full border-2 border-gray-300"
                     />
                 </div>
-
+    
                 <div className="flex flex-row items-center space-x-2 flex-grow ml-4">
                     <input
                         type="text"
@@ -57,7 +57,7 @@ function Header({ onSelectService }) {
                         </button>
                     </div>
                 </div>
-
+    
                 <div className="flex items-center space-x-4 ml-4">
                     <a href="/become-skilled-worker" className="text-black hover:underline">
                         Become a skilled worker
@@ -77,7 +77,7 @@ function Header({ onSelectService }) {
                     </div>
                 </div>
             </div>
-
+    
             <Filter isOpen={isModalOpen} onClose={handleCloseModal} onSelectFilter={handleSelectService} />
             <Login isOpen={isLoginOpen} onClose={handleToggleLogin} />
         </div>

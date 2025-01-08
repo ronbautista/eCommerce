@@ -15,16 +15,6 @@ const ServiceCards = () => {
             description: "Professional cleaning services for homes and offices."
         },
         {
-            imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbzq7y1VoSUyd1mSe-Gg1R6RxVSwjaq9e4XA&s",
-            title: "Installation Services",
-            description: "Heating, ventilation, and air conditioning solutions."
-        },
-        {
-            imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s",
-            title: "Landscaping & Outdoor Care",
-            description: "Expert landscaping and outdoor maintenance services."
-        },
-        {
             imageSrc: "https://media.istockphoto.com/id/157398786/photo/african-american-man-renovating-home-interior.jpg?s=612x612&w=0&k=20&c=C_Yb1vd1VXHxY3UZNWQyZSsPuH43a6UNtxEoNq3RUHM=",
             title: "Renovation and Improvement",
             description: "Home renovation services to enhance your living space."

@@ -55,3 +55,35 @@ html, body {
 .custom-ml-4 {
     margin-left: 1rem;
 }
+/* Desktop styles */
+body {
+    font-size: 16px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Tablet styles */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .container {
+      padding: 0 10px;
+    }
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+  
+    .container {
+      padding: 0 5px;
+    }
+  }
+  

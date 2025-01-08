@@ -49,7 +49,7 @@ const Cards = () => {
             description: "General Contractor.",
             rating: 4.5,
             aboutMe: "David has extensive experience managing construction projects, overseeing teams, and delivering quality results on time and within budget.",
-            Service: "Maintenance and Repairs",
+            Service: "Painting / Wall Repair",
              descriptionimg: "https://www.fracttal.com/hubfs/_c7242d8e-7aa8-4617-944e-29a06efcd8c2%20%28convert.io%29.webp"
         },
         {
@@ -99,7 +99,7 @@ const Cards = () => {
              descriptionimg: "https://www.popcornfurniture.com/wp-content/uploads/2020/08/sanitizing.jpg"
         },
         {
-            imageSrc: "https://via.placeholder.com/150",
+            imageSrc: "https://th.bing.com/th/id/OIP.ipWTpxe7jXac-leDpdoJAwHaE8?rs=1&pid=ImgDetMain",
             title: "Henry",
             description: "Commercial Cleaner.",
             rating: 4.5,
@@ -118,56 +118,56 @@ const Cards = () => {
         },
         // Landscaping
         {
-            imageSrc: "https://african.land/oc-content/plugins/blog/img/blog/341.jpg",
+            imageSrc: "https://media.istockphoto.com/id/1194461958/photo/bush-trimming-with-electrically-powered-chain-saw.jpg?s=612x612&w=0&k=20&c=2HMPZq4JoqpAWv3Ez6QUPj-kw3XVH0PNjnTpER9-C7M=",
             title: "Jack",
-            description: "Landscaper.",
+            description: "Renovation and Improvement",
             rating: 4.5,
             aboutMe: "Jack transforms outdoor spaces into beautiful landscapes, tailored to your vision.",
-            Service: "Landscaping",
+            Service: "Repair",
              descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
         },
         {
             imageSrc: "https://www.yourfreecareertest.com/wp-content/uploads/2017/10/nursary_worker.jpg",
             title: "Kathy",
-            description: "Gardener.",
+            description: "Cleaning Specialist.",
             rating: 4.5,
-            aboutMe: "Kathy is a passionate gardener who brings gardens to life with her green thumb.",
-            Service: "Landscaping",
-             descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
+            aboutMe: "Kathy provides top-tier cleaning services, ensuring every corner sparkles with her meticulous work.",
+            Service: "Deep Cleaning",
+            descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
         },
         {
             imageSrc: "https://www.checkatrade.com/blog/wp-content/uploads/2020/10/Property-maintenance-cost.jpg",
             title: "Liam",
-            description: "Outdoor Maintenance.",
+            description: "Property Cleaner.",
             rating: 4.5,
-            aboutMe: "Liam ensures outdoor areas are maintained to perfection, no matter the season.",
-            Service: "Landscaping",
-             descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
-        },
-        {
+            aboutMe: "Liam excels in maintaining cleanliness and hygiene in properties, ensuring a fresh and inviting space.",
+            Service: "Property Cleaning",
+            descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
+          },
+          {
             imageSrc: "https://worldlandscapearchitect.com/wp-content/uploads/2021/04/John-Yuen.jpg",
             title: "Kian",
-            description: "Landscape Designer.",
+            description: "Renovation Designer.",
             rating: 4.5,
-            aboutMe: "Kian creates stunning outdoor designs that harmonize with nature and client preferences.",
-            Service: "Landscaping",
-             descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
-        },
-        {
+            aboutMe: "Kian specializes in designing innovative renovations, combining functionality and aesthetic appeal.",
+            Service: "Interior and Exterior Renovations",
+            descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
+          },
+          {
             imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR30fTbv_tKbzsGdN0cpAnhIHyH80JLVP-A5g&s",
             title: "Noah",
-            description: "Irrigation Specialist.",
+            description: "Restoration Specialist.",
             rating: 4.5,
-            aboutMe: "Noah designs and maintains irrigation systems to keep landscapes thriving and healthy.",
-            Service: "Landscaping",
-             descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
-        },
+            aboutMe: "Noah is an expert in restoring and improving spaces to their former glory, paying attention to every detail.",
+            Service: "Home and Commercial Restoration",
+            descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
+          },
         {
             imageSrc: "https://media.istockphoto.com/id/1176789148/photo/female-tree-surgeon-pulling-tree-branch-through-gate.jpg?s=612x612&w=0&k=20&c=Zvio7uiiGGn3CqMAbv12b8oRU_Chto8YwRewLqV_GFg=",
             title: "Olivia",
-            description: "Tree Surgeon.",
+            description: "Electrical Specialist.",
             rating: 4.5,
-            aboutMe: "Olivia is an experienced tree surgeon, ensuring the health and safety of your trees.",
+            aboutMe: "Olivia is an expert in Electrical and spaces to their former glory, paying attention to every detail.",
             Service: "Landscaping",
              descriptionimg: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWioZZx0-yBC3hsA2k6h_VNgbSb3oqXNE4Q&s"
         },
@@ -264,23 +264,27 @@ const Cards = () => {
                 description: data.description,
                 rating: data.rating,
                 aboutMe: data.aboutMe,
-                descriptionimg: data.descriptionimg // Pass the description image
+                descriptionimg: data.descriptionimg 
             }
         });
     };
 
     return (
-        <div className="flex flex-col items-center justify-center w-full md:w-2/3 mx-auto overflow-x-auto whitespace-nowrap mt-8">
+        <div className="flex flex-col items-center justify-center w-full max-w-[calc(100%-20px)] md:max-w-[calc(100%-60px)] mx-auto overflow-x-auto whitespace-nowrap mt-8"> {/* Responsive width */}
             <div className="flex overflow-x-auto flex-nowrap space-x-4">
                 {cardData.map((data, index) => (
                     <div 
                         key={index} 
-                        className="flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow-md w-64 cursor-pointer" 
+                        className="flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow-md w-48 cursor-pointer" // Card width remains the same
                         onClick={() => handleCardClick(data)} 
                     >
-                        <img src={data.imageSrc} alt={data.title} className="w-32 h-32 object-cover rounded-full mb-4" />
-                        <h2 className="text-xl font-semibold">{data.title}</h2>
-                        <p className="text-sm text-gray-500">{data.description}</p>
+                        <img 
+                            src={data.imageSrc} 
+                            alt={data.title} 
+                            className="w-24 h-24 object-cover rounded-full mb-4" // Circular image
+                        />
+                        <h2 className="text-lg font-semibold text-center">{data.title}</h2> {/* Adjusted text size */}
+                        <p className="text-sm text-gray-500 text-center">{data.description}</p>
                         <div className="flex items-center mt-2">
                             <span className="text-yellow-500">★</span>
                             <span className="ml-1">({data.rating})</span>
@@ -290,6 +294,7 @@ const Cards = () => {
             </div>
         </div>
     );
+    
 };
 
 export default Cards;

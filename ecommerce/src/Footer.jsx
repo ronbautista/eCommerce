@@ -9,7 +9,7 @@ import mayaIcon from './assets/maya.svg';
 
 function Footer() {
   return (
-    <footer className="bg-green-100 text-black p-8"> {/* Changed the classes here */}
+    <footer className="bg-green-100 text-black p-4"> {/* Adjusted padding here */}
       <div className="container mx-auto px-4 flex flex-wrap justify-between items-start">
         
         {/* Company Section */}
@@ -73,7 +73,7 @@ function Footer() {
           <p>Your go-to solution for reliable home services delivered right to your doorstep. From repairs to renovations, we connect you with trusted skilled workers to make home improvement hassle-free.</p>
         </div>
       </div>
- </footer>
+    </footer>
   );
 }
 

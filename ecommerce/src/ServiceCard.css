@@ -12,8 +12,8 @@
     border-radius: 0.25rem; /* Slightly smaller rounded corners */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow effect */
     padding: 1rem; /* Reduced padding inside the card */
-    width: 200px; /* Increased width for each card */
-    height: 250px; /* Increased height for each card */
+    /* Increased width for each card to fit longer titles */
+    height: 250px; /* Fixed height for each card */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,7 @@
 
 .service-card:hover {
     transform: scale(1.05); /* Slightly scale up the card on hover */
-    height: 300px; /* Increase height on hover to show full text */
+    height: 250px; /* Keep height fixed on hover */
 }
 
 .service-card img {
