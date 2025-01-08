@@ -14,7 +14,8 @@ import Services2 from './Services2';
 import Services3 from './Services3';
 import Service4 from './Service4';
 import Services5 from './Services5';
-import Aliceguo from './Aliceguo'; // Import the Aliceguo component
+import Aliceguo from './Aliceguo'; 
+import i18n from "../i18n.js";// Import the Aliceguo component
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
