@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import PaymentForm from "./paymentform"; // Import the PaymentForm component
 
 const BookingComponent = () => {
+  const [showPaymentForm, setShowPaymentForm] = useState(false);
+
+  const handleBookClick = () => {
+    setShowPaymentForm(true); // Switch to the payment form view
+  };
+
+  if (showPaymentForm) {
+    return <PaymentForm />; // Render the PaymentForm when state is true
+  }
+
   return (
     <div className="bg-green-100 min-h-screen flex items-center justify-center p-6">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-5xl">
@@ -106,8 +117,12 @@ const BookingComponent = () => {
         </div>
 
         {/* Book Button */}
+        {/* Book Button */}
         <div className="mt-8 text-center">
-          <button className="w-full lg:w-auto bg-black text-white py-3 px-6 rounded-md hover:bg-gray-900 font-bold">
+          <button
+            className="w-full lg:w-auto bg-black text-white py-3 px-6 rounded-md hover:bg-gray-900 font-bold"
+            onClick={handleBookClick} // Handle the button click
+          >
             Book
           </button>
         </div>
