@@ -98,6 +98,9 @@ function Header({ onSelectService }) {
                         <option value="es">Español</option>
                         <option value="fr">Français</option>
                         <option value="fil">Filipino</option>
+                        <option value="jp">Japanese</option>
+                        <option value="korean">Korea</option>
+                        <option value="ch">China</option>
                     </select>
                 </div>
             </div>

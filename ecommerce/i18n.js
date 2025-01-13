@@ -27,6 +27,13 @@ i18n
           NestFix: 'NestFix',
           'Your go-to solution for reliable home services':
             'Your go-to solution for reliable home services delivered right to your doorstep. From repairs to renovations, we connect you with trusted skilled workers to make home improvement hassle-free.',
+            'service.categories': 'Categories',
+            'service.maintenance_repairs': 'Maintenance & Repairs',
+            'service.maintenance_description': 'Expert plumbing services for all your needs.',
+            'service.cleaning_sanitation': 'Cleaning & Sanitation',
+            'service.cleaning_description': 'Professional cleaning services for homes and offices.',
+            'service.renovation_improvement': 'Renovation and Improvement',
+            'service.renovation_description': 'Home renovation services to enhance your living space.',
         },
       },
       es: {
@@ -48,7 +55,15 @@ i18n
           'Follow Us': 'Síguenos',
           NestFix: 'NestFix',
           'Your go-to solution for reliable home services':
-            'Tu solución confiable para servicios del hogar',
+            'Su solución de referencia para servicios domésticos confiables entregados directamente a su puerta. Desde reparaciones hasta renovaciones, lo conectamos con trabajadores calificados de confianza para que las mejoras en el hogar no tengan problemas.',
+            'service.categories': 'Categorías',
+          'service.maintenance_repairs': 'Mantenimiento y Reparaciones',
+          'service.maintenance_description': 'Servicios de fontanería expertos para todas sus necesidades.',
+          'service.cleaning_sanitation': 'Limpieza y Saneamiento',
+          'service.cleaning_description': 'Servicios de limpieza profesional para hogares y oficinas.',
+          'service.renovation_improvement': 'Renovación y Mejora',
+          'service.renovation_description': 'Servicios de renovación del hogar para mejorar su espacio vital.',
+        
         },
       },
       fr: {
@@ -70,7 +85,7 @@ i18n
           'Follow Us': 'Suivez-nous',
           NestFix: 'NestFix',
           'Your go-to solution for reliable home services':
-            'Votre solution fiable pour les services à domicile',
+            'Votre solution de référence pour des services à domicile fiables livrés directement à votre porte. Des réparations aux rénovations, nous vous mettons en contact avec des travailleurs qualifiés de confiance pour faciliter lamélioration de votre maison.',
         },
       },
       fil: {
@@ -92,10 +107,39 @@ i18n
           'Follow Us': 'Sundan Kami',
           NestFix: 'NestFix',
           'Your go-to solution for reliable home services':
-            'Ang iyong maaasahang solusyon para sa mga serbisyo sa bahay',
+            'Ang iyong solusyon para sa maaasahang mga serbisyo sa bahay na inihahatid mismo sa iyong pintuan. Mula sa pagkukumpuni hanggang sa pagsasaayos, ikinonekta ka namin sa mga pinagkakatiwalaang skilled worker para gawing walang problema ang pagpapabuti ng bahay.',
         },
       },
+      jp: {
+        translation: {
+          Search: '検索',
+          Filter: 'フィルター',
+          'Become a skilled worker': '熟練工になる',
+          notification: '通知',
+          Login: 'ログイン',
+          Signup: 'サインアップ',
+          Company: '会社',
+          'About NestFix': 'NestFixについて',
+          'Terms & Conditions': '利用規約',
+          'Privacy Policy': 'プライバシーポリシー',
+          'Help Center': 'ヘルプセンター',
+          'Contact Us': 'お問い合わせ',
+          Payment: '支払い',
+          'Construction Retailer': '建設小売業者',
+          'Follow Us': 'フォローしてください',
+          NestFix: 'NestFix',
+          'Your go-to solution for reliable home services':
+            '信頼できるホームサービスを自宅までお届けするためのあなたの頼りになるソリューションです。修理から改装まで、信頼できる熟練工とつなぎ、家の改善を手間なく行えるようにします。',
+          'service.categories': 'カテゴリ',
+          'service.maintenance_repairs': 'メンテナンスと修理',
+          'service.maintenance_description': 'すべてのニーズに対応する専門的な配管サービス。',
+          'service.cleaning_sanitation': '清掃と衛生',
+          'service.cleaning_description': '家庭やオフィス向けのプロフェッショナルな清掃サービス。',
+          'service.renovation_improvement': '改装と改善',
+          'service.renovation_description': '居住空間を向上させるための住宅改装サービス。',
+        },
     },
+  },
     fallbackLng: 'en',
     debug: true,
     interpolation: {
