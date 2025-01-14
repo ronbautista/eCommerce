@@ -2,9 +2,11 @@ import React from 'react';
 import Card from './Card'; // Import the Card component
 import Aliceguo from './Aliceguo';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next'; // Import the specific styles for Cards
 
 const Cards = () => {
     const navigate = useNavigate(); 
+    const { t } = useTranslation();
     const cardData = [
         // Maintenance and Repairs
         {
@@ -270,29 +272,29 @@ const Cards = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center w-full max-w-[calc(100%-20px)] md:max-w-[calc(100%-60px)] mx-auto overflow-x-auto whitespace-nowrap mt-8"> {/* Responsive width */}
-            <div className="flex overflow-x-auto flex-nowrap space-x-4">
-                {cardData.map((data, index) => (
-                    <div 
-                        key={index} 
-                        className="flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow-md w-48 cursor-pointer" // Card width remains the same
-                        onClick={() => handleCardClick(data)} 
-                    >
-                        <img 
-                            src={data.imageSrc} 
-                            alt={data.title} 
-                            className="w-24 h-24 object-cover rounded-full mb-4" // Circular image
-                        />
-                        <h2 className="text-lg font-semibold text-center">{data.title}</h2> {/* Adjusted text size */}
-                        <p className="text-sm text-gray-500 text-center">{data.description}</p>
-                        <div className="flex items-center mt-2">
-                            <span className="text-yellow-500">★</span>
-                            <span className="ml-1">({data.rating})</span>
-                        </div>
+        <div className="flex flex-col items-center justify-center w-full max-w-[calc(100%-20px)] md:max-w-[calc(100%-60px)] mx-auto overflow-x-auto whitespace-nowrap mt-8">
+        <div className="flex overflow-x-auto flex-nowrap space-x-4">
+            {cardData.map((data, index) => (
+                <div 
+                    key={index} 
+                    className="flex flex-col items-center justify-center bg-white p-4 rounded-lg shadow-md w-48 cursor-pointer"
+                    onClick={() => handleCardClick(data)} 
+                >
+                    <img 
+                        src={data.imageSrc} 
+                        alt={data.title} 
+                        className="w-24 h-24 object-cover rounded-full mb-4"
+                    />
+                    <h2 className="text-lg font-semibold text-center">{data.title}</h2>
+                    <p className="text-sm text-gray-500 text-center">{t(data.description)}</p>
+                    <div className="flex items-center mt-2">
+                        <span className="text-yellow-500">★</span>
+                        <span className="ml-1">({data.rating})</span>
                     </div>
-                ))}
-            </div>
+                </div>
+            ))}
         </div>
+    </div>
     );
     
 };

@@ -25,21 +25,24 @@ const ServiceCards = () => {
     ];
 
     return (
-        <div className="service-card-container">
-            <div className="flex flex-col space-y-4 py-4">
-                <h2 style={{ fontWeight: 'bold', fontSize: '24px' }}>{t('service.categories')}</h2>
-                <div className="flex overflow-x-auto flex-nowrap space-x-4">
-                    {serviceCardData.map((data, index) => (
-                        <CardServices 
-                            imageSrc={data.imageSrc} 
-                            title={t(data.titleKey)} // Translate title
-                            description={t(data.descriptionKey)} // Translate description
-                            key={index} 
-                        />
-                    ))}
-                </div>
-            </div>
+<div className="service-card-container">
+    <div className="flex flex-col space-y-4 py-4">
+        <h2 style={{ fontWeight: 'bold', fontSize: '24px' }}>{t('service.categories')}</h2>
+        <div className="flex overflow-x-auto flex-nowrap space-x-4">
+            {serviceCardData.map((data, index) => (
+                <CardServices
+                    imageSrc={data.imageSrc}
+                    title={t(data.titleKey)} // Translated title
+                    description={t(data.descriptionKey)} // Translated description
+                    originalTitle={data.titleKey} // Original title key
+                    originalDescription={data.descriptionKey} // Original description key
+                    key={index}
+                />
+            ))}
         </div>
+    </div>
+</div>
+
     );
 };
 

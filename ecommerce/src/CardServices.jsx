@@ -1,18 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Ensure you import Link from react-router-dom
 
-const CardServices = ({ imageSrc, title, description }) => {
+const CardServices = ({ imageSrc, title, description, originalTitle, originalDescription }) => {
     return (
         <Link 
-            to={`/services/${encodeURIComponent(title)}`} 
-            className="service-card cursor-pointer" // Use the CSS class for styling
+            to={{
+                pathname: `/services/${encodeURIComponent(title)}`, // Translated title in URL
+                state: { 
+                    originalTitle, 
+                    originalDescription, 
+                    imageSrc 
+                } // Pass original data via state
+            }}
+            className="service-card cursor-pointer"
         >
             <img 
                 src={imageSrc} 
                 alt={title} 
             />
-            <h3>{title}</h3> {/* No truncate class on title */}
-            <p>{description}</p> {/* No truncate class on description */}
+            <h3>{title}</h3>
+            <p>{description}</p>
         </Link>
     );
 };
